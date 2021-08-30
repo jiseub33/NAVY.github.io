@@ -61,14 +61,13 @@ body {
 }
 
 .visual-area {
-    margin: 0px auto;
+    width: 100%;
+    height: auto;
 }
 
 .INTRO {
     display: block;
     margin: 0px auto;
-    width: 1500px;
-    height: auto;
 }
 
 .content {
