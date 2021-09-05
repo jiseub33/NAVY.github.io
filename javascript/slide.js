@@ -1,10 +1,10 @@
-$(document).ready(function () {
+$(document).ready(function() {
     slide();
-});
-
-
-// ½½¶óÀÌµå 
-function slide() {
+  });
+  
+  
+  // ìŠ¬ë¼ì´ë“œ 
+  function slide() {
     var wid = 0;
     var now_num = 0;
     var slide_length = 0;
@@ -12,108 +12,108 @@ function slide() {
     var $dotli = $('.dot>li');
     var $panel = $('.panel');
     var $panelLi = $panel.children('li');
-
-    // º¯¼ö ÃÊ±âÈ­
+  
+    // ë³€ìˆ˜ ì´ˆê¸°í™”
     function init() {
-        wid = $('.slide').width();
-        now_num = $('.dot>li.on').index();
-        slide_length = $dotli.length;
+      wid = $('.slide').width();
+      now_num = $('.dot>li.on').index();
+      slide_length = $dotli.length;
     }
-
-    // ÀÌº¥Æ® ¹­À½
+  
+    // ì´ë²¤íŠ¸ ë¬¶ìŒ
     function slideEvent() {
-
-        // ½½¶óÀÌµå ÇÏ´Ü dot¹öÆ° Å¬¸¯ÇßÀ»¶§
-        $dotli.click(function () {
-            now_num = $(this).index();
-            slideMove();
-        });
-
-        // ÀÌÈÄ ¹öÆ° Å¬¸¯ÇßÀ»¶§
-        $('.next').click(function () {
-            nextChkPlay();
-        });
-
-        // ÀÌÀü ¹öÆ° Å¬¸¯ÇßÀ»¶§
-        $('.prev').click(function () {
-            prevChkPlay();
-        });
-
-        // ¿ÀÅäÇÃ·¹ÀÌ
-        autoPlay();
-
-        // ¿ÀÅäÇÃ·¹ÀÌ ¸ØÃã
-        autoPlayStop();
-
-        // ¿ÀÅäÇÃ·¹ÀÌ Àç½ÃÀÛ
-        autoPlayRestart();
-
-        // È­¸éÅ©±â Àç¼³Á¤ µÇ¾úÀ»¶§
-        resize();
+  
+      // ìŠ¬ë¼ì´ë“œ í•˜ë‹¨ dotë²„íŠ¼ í´ë¦­í–ˆì„ë•Œ
+      $dotli.click(function() {
+        now_num = $(this).index();
+        slideMove();
+      });
+  
+      // ì´í›„ ë²„íŠ¼ í´ë¦­í–ˆì„ë•Œ
+      $('.next').click(function() {
+        nextChkPlay();
+      });
+  
+      // ì´ì „ ë²„íŠ¼ í´ë¦­í–ˆì„ë•Œ
+      $('.prev').click(function() {
+        prevChkPlay();
+      });
+  
+      // ì˜¤í† í”Œë ˆì´
+      autoPlay();
+  
+      // ì˜¤í† í”Œë ˆì´ ë©ˆì¶¤
+      autoPlayStop();
+  
+      // ì˜¤í† í”Œë ˆì´ ì¬ì‹œì‘
+      autoPlayRestart();
+  
+      // í™”ë©´í¬ê¸° ì¬ì„¤ì • ë˜ì—ˆì„ë•Œ
+      resize();
     }
-
-    // ÀÚµ¿½ÇÇà ÇÔ¼ö
+  
+    // ìë™ì‹¤í–‰ í•¨ìˆ˜
     function autoPlay() {
-        auto = setInterval(function () {
-            nextChkPlay();
-        }, 3000);
+      auto = setInterval(function() {
+        nextChkPlay();
+      }, 3000);
     }
-
-    // ÀÚµ¿½ÇÇà ¸ØÃã
+  
+    // ìë™ì‹¤í–‰ ë©ˆì¶¤
     function autoPlayStop() {
-        $panelLi.mouseenter(function () {
-            clearInterval(auto);
-        });
+      $panelLi.mouseenter(function() {
+        clearInterval(auto);
+      });
     }
-
-
-    // ÀÚµ¿½ÇÇà ¸ØÃè´Ù°¡ Àç½ÇÇà
+  
+  
+    // ìë™ì‹¤í–‰ ë©ˆì·„ë‹¤ê°€ ì¬ì‹¤í–‰
     function autoPlayRestart() {
-        $panelLi.mouseleave(function () {
-            auto = setInterval(function () {
-                nextChkPlay();
-            }, 3000);
-        });
+      $panelLi.mouseleave(function() {
+        auto = setInterval(function() {
+          nextChkPlay();
+        }, 3000);
+      });
     }
-
-    // ÀÌÀü ¹öÆ° Å¬¸¯½Ã Á¶°Ç °Ë»çÈÄ ½½¶óÀÌµå ¹«ºê
+  
+    // ì´ì „ ë²„íŠ¼ í´ë¦­ì‹œ ì¡°ê±´ ê²€ì‚¬í›„ ìŠ¬ë¼ì´ë“œ ë¬´ë¸Œ
     function prevChkPlay() {
-        if (now_num == 0) {
-            now_num = slide_length - 1;
-        } else {
-            now_num--;
-        }
-        slideMove();
+      if (now_num == 0) {
+        now_num = slide_length - 1;
+      } else {
+        now_num--;
+      }
+      slideMove();
     }
-
-    // ÀÌÈÄ ¹öÆ° Å¬¸¯½Ã Á¶°Ç °Ë»çÈÄ ½½¶óÀÌµå ¹«ºê
+  
+    // ì´í›„ ë²„íŠ¼ í´ë¦­ì‹œ ì¡°ê±´ ê²€ì‚¬í›„ ìŠ¬ë¼ì´ë“œ ë¬´ë¸Œ
     function nextChkPlay() {
-        if (now_num == slide_length - 1) {
-            now_num = 0;
-        } else {
-            now_num++;
-        }
-        slideMove();
+      if (now_num == slide_length - 1) {
+        now_num = 0;
+      } else {
+        now_num++;
+      }
+      slideMove();
     }
-
-    // ½½¶óÀÌµå ¹«ºê
+  
+    // ìŠ¬ë¼ì´ë“œ ë¬´ë¸Œ
     function slideMove() {
-        $panel.stop().animate({
-            'margin-left': -wid * now_num
-        });
-        $dotli.removeClass('on');
-        $dotli.eq(now_num).addClass('on');
+      $panel.stop().animate({
+        'margin-left': -wid * now_num
+      });
+      $dotli.removeClass('on');
+      $dotli.eq(now_num).addClass('on');
     }
-
-    // È­¸éÅ©±â Á¶Á¤½Ã È­¸é Àç¼³Á¤
+  
+    // í™”ë©´í¬ê¸° ì¡°ì •ì‹œ í™”ë©´ ì¬ì„¤ì •
     function resize() {
-        $(window).resize(function () {
-            init();
-            $panel.css({
-                'margin-left': -wid * now_num
-            });
+      $(window).resize(function() {
+        init();
+        $panel.css({
+          'margin-left': -wid * now_num
         });
+      });
     }
     init();
     slideEvent();
-}
+  }

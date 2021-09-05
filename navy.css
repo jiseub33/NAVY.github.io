@@ -3,61 +3,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --text-color:;
+    --background-color:;
+    --accent-color:;
+}
 
 body {
     margin: 0;
-    padding: 0;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
 }
 
 .header {
-    border: 1px solid #E2E2E2;
-    border-right: 0px solid #FFFFFF;
-    border-left: 0px solid #FFFFFF;
-}
-
-.header-sub {
-    width: 1500px;
-    height: 80px;
     margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
-    display: block;
+    max-width: 2000px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ffffff; 
 }
 
 .header-logo {
-    display: inline-block;
-    height: 80px;
-    margin-right: 0px;
-    vertical-align: middle;
-    height: 80px;
-    line-height: 90px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
-.NAVY-LOGO {
-
+.header-logo i {
+    color: blue;
 }
 
-.header-button {
-    display: inline-block;
-    width: 600px;
-    height: 80px;
-    line-height: 80px;
-}
-
-.menu {
-    text-align: center;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin: 0px;
-    text-align: center;
-}
-
-.NAVY-TITLE {
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-    align-items: center;
+.header-menu {
+    display: flex;
     font-family: 'Noto Sans KR', sans-serif;
+    text-align: left;
+}
+
+.header-menu li {
+    padding: 8px 12px;
+}
+
+.header-icons {
+    list-style: none;
+    color: black;
+    display: flex;
+}
+
+.header-icons li {
+    padding: 8px 12px;
+}
+
+.header-toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #000000;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: : column;
+        align-items: flex-start;
+        padding: 8px; 24px;
+    }
+
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-menu li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .header-icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-toogleBtn {
+        display: block;
+    }
+
+    .header-menu.active,
+    .header-icons.active {
+        display: flex;
+    }
 }
 
 .visual-area {
@@ -91,13 +136,11 @@ a {
 }
 
 img {
-    vertical-align: middle;
     border: none;
 }
 
 .slide {
     position: relative;
-    padding-top: 50px;
     overflow: hidden;
 }
 
@@ -113,7 +156,7 @@ img {
 
 .panel > li {
     width: 25%;
-    height: 200px;
+    height: 800px;
     float: left;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -121,15 +164,15 @@ img {
 }
 
 .panel > li:nth-of-type(1) {
-    background-color: red;
+    background-image: url(images/MAIN-homepage-open.png);
 }
 
 .panel > li:nth-of-type(2) {
-    background-color: blue;
+    background-image: url(images/MAIN-homepage-open.png);
 }
 
 .panel > li:nth-of-type(3) {
-    background-color: green;
+    background-image: url(images/MAIN-homepage-open.png);
 }
 
 .dot:after {
@@ -165,23 +208,32 @@ img {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: #fff;
     top: 50%;
     transform: translateY(-50%);
-    left: 10%;
+    left: 2%;
     cursor: pointer;
+}
+    
+.right-button {
+    max-width: 100%;
+    height: auto;
 }
 
 .next {
     position: absolute;
     width: 50px;
     height: 50px;
-    background-color: #fff;
     top: 50%;
     transform: translateY(-50%);
-    right: 10%;
+    right: 2%;
     cursor: pointer;
 }
+
+.left-button {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .contents {
     height: 5000px;
@@ -192,7 +244,7 @@ img {
 }
 
 .slide-banner {
-
+    
 }
 
 .contents-1 {
@@ -270,10 +322,6 @@ footer {
     padding-bottom: 40px;
     padding-right: 10px;
     padding-left: 10px;
-}
-
-.TEST {
-    height: 500px;
 }
 
 .service-center {
