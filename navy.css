@@ -22,20 +22,30 @@ a {
 
 .header {
     margin: 0 auto;
-    max-width: 2000px;
-    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: #ffffff; 
+    border: 1px solid #E2E2E2;
+}
+
+.test {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .header-logo {
-    font-size: 24px;
-    color: white;
-    font-family: 'Anton', sans-serif;
-    margin-right: 30px;
-    margin-left: 30px;
+
+}
+
+.header-logo-image {
+    width: 180px;
+    height: auto;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
 }
 
 .header-logo i {
@@ -49,7 +59,7 @@ a {
 }
 
 .header-menu li {
-    padding: 8px 12px;
+    padding: 8px 20px;
 }
 
 .header-icons {
@@ -113,7 +123,7 @@ a {
 }
 
 .visual-area-content {
-
+    
 }
 
 .slide-banner {
@@ -152,7 +162,7 @@ img {
     content: "";
     display: block;
     clear: both;
-    }
+}
 
 .panel > li {
     width: 25%;
@@ -165,14 +175,17 @@ img {
 
 .panel > li:nth-of-type(1) {
     background-image: url(images/MAIN-homepage-open.png);
+    background-size: contain;
 }
 
-.panel > li:nth-of-type(2) {
+.panel > li:nth-of-type(2) {    
     background-image: url(images/MAIN-homepage-open.png);
+    background-size: contain;
 }
 
 .panel > li:nth-of-type(3) {
     background-image: url(images/MAIN-homepage-open.png);
+    background-size: contain;
 }
 
 .dot:after {
@@ -265,7 +278,7 @@ img {
 
 .content-1-text {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 50px;
+    font-size: 100px;
     width: 100%;
     max-width: 1920x;
     margin: 0px auto;
@@ -276,7 +289,7 @@ img {
 
 .content-1-subtext {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;
+    font-size: 10px;
     max-width: 100%;
     width: 1920px;
     margin: 0px auto;
