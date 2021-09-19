@@ -328,16 +328,16 @@ footer {
     border-right: 0px solid #FFFFFF;
     border-left: 0px solid #FFFFFF;
     margin: 0px auto;
+    width: 100%;
+    height: auto;
 }
 
 .footer-area {
-    width: 2000px;
-    height: 80px;
     margin: 0 auto;
     text-align: center;
     background-color: #ffffff;
     color: #000000;
-
+    max-width: 2000px;
 }
 
 .footer-text {
@@ -353,4 +353,5 @@ footer {
 
 .copyright {
     text-align: left;
+    font-size: 5px;
 }
