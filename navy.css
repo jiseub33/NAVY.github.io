@@ -6,11 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root {
-    --text-color:;
-    --background-color:;
-    --accent-color:;
 }
-
 body {
     margin: 0;
 }
@@ -322,6 +318,7 @@ footer {
     border: 1px solid #E2E2E2;
     border-right: 0px solid #FFFFFF;
     border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
 }
 
 .footer-area {
