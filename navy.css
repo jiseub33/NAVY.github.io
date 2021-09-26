@@ -301,7 +301,7 @@ img {
 }
 
 .content-1-picture {
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -343,20 +343,20 @@ footer {
 
 .footer-area {
     margin: 0 auto;
-    text-align: center;
     background-color: #ffffff;
     color: #000000;
     max-width: 2000px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    padding: 1.5vw;
+    text-align: center;
+    overflow: hidden;
 }
 
 .footer-text {
-    align-items: center;
     padding: 20px 20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
+    display: inline-block;
+    float: left;
 }
 
 .service-center {
@@ -369,38 +369,26 @@ footer {
     font-size: 1.5vh;
 }
 
-.SNS {
+.footer-SNS {
     padding: 20px 20px;
-    display: flex;
-    align-items: center;
-}
-
-.SNS-TEXT {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 500;
-}
-
-.SNS-SIZE {
-
+    display: inline-block;
+    float: right;
 }
 
 .kakaotalk {
-    max-width: 40px;
+    max-width: 35px;
     height: auto;
-    align-items: center;
-    margin-left: 15px;
+    display: inline-block;
 }
 
 .gunship-community {
-    max-width: 40px;
+    max-width: 35px;
     height: auto;
-    align-items: center;
-    margin-left: 15px;
+    display: inline-block;
 }
 
 .youtube {
-    max-width: 40px;
+    max-width: 35px;
     height: auto;
-    align-items: center;
-    margin-left: 15px;
+    display: inline-block;
 }
