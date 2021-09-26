@@ -177,17 +177,17 @@ img {
 }
 
 .panel > li:nth-of-type(1) {
-    background-image: url(images/MAIN-homepage-open.png);
+    background-image: url(images/배너디자인.png);
     background-size: contain;
 }
 
 .panel > li:nth-of-type(2) {    
-    background-image: url(images/MAIN-homepage-open.png);
+    background-image: url(images/배너디자인.png);
     background-size: contain;
 }
 
 .panel > li:nth-of-type(3) {
-    background-image: url(images/MAIN-homepage-open.png);
+    background-image: url(images/배너디자인.png);
     background-size: contain;
 }
 
