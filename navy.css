@@ -255,7 +255,6 @@ img {
 
 
 .contents {
-    height: 5000px;
     max-width: 2000px;
     background-color: #000000;
     margin: 0 auto;
@@ -266,8 +265,7 @@ img {
 }
 
 .contents-1 {
-    height: 5000px;
-    max-width: 2000px;
+    max-width: 2000px;  
     background-color: #000000;
     margin: 0 auto;
     margin-top: 50px;
@@ -275,15 +273,12 @@ img {
 
 .content-1-benner {
     margin: 0 auto;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    height: 114px;
     align-items: center;
 }
 
 .content-1-text {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 50px;
+    font-family: 'Noto Sans KR', sans-ser   if;
+    font-size: 3vh;
     width: 100%;
     max-width: 1920x;
     margin: 0px auto;
@@ -294,8 +289,8 @@ img {
 
 .content-1-subtext {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 10px;
-    max-width: 100%;
+    font-size: 1vh;
+    max-width: 100%;    
     width: 1920px;
     margin: 0px auto;
     margin-top: 10px;
@@ -306,7 +301,12 @@ img {
 }
 
 .content-1-picture {
-    height: 400px
+
+}
+
+.content-1-image {
+    max-width: 100%;
+    height: auto;
 }
 
 .content-1-bottom-Explanation {
