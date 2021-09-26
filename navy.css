@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 :root {
@@ -25,7 +21,7 @@ a {
     border: 1px solid #E2E2E2;
 }
 
-.test {
+.header-divide {
     margin: 0 auto;
     max-width: 1400px;
     width: 100%;
@@ -52,6 +48,7 @@ a {
 .header-menu {
     display: flex;
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
     text-align: left;
 }
 
@@ -274,34 +271,38 @@ img {
 .content-1-benner {
     margin: 0 auto;
     align-items: center;
+    padding: 30px;
 }
 
 .content-1-text {
     font-family: 'Noto Sans KR', sans-ser   if;
-    font-size: 3vh;
+    font-size: 5vh;
     width: 100%;
     max-width: 1920x;
     margin: 0px auto;
     color: #ffffff;
     text-align: center;
     align-items: center;
+    font-weight: 700;
 }
 
 .content-1-subtext {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1vh;
+    font-size: 1.5vh;
     max-width: 100%;    
     width: 1920px;
     margin: 0px auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #ffffff;     
     text-align: center;
     align-items: center;
+    font-weight: 500;
 }
 
 .content-1-picture {
-
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .content-1-image {
@@ -310,7 +311,7 @@ img {
 }
 
 .content-1-bottom-Explanation {
-    height: 400px;
+    height: 50px;
 }
 
 .content-1-Explanation {
@@ -321,6 +322,14 @@ img {
     width: 1920px;
     margin: 0px auto;
     color: #ffffff;
+}
+
+.content-1-bottom-button {
+    text-align: center;
+}
+
+.content-1-button {
+    cursor: pointer;
 }
 
 footer {
@@ -338,20 +347,60 @@ footer {
     background-color: #ffffff;
     color: #000000;
     max-width: 2000px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .footer-text {
     align-items: center;
     padding: 20px 20px;
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
 }
 
 .service-center {
     text-align: left;
-    font-size: 10px;
+    font-size: 1.5vh;
 }
 
 .copyright {
     text-align: left;
-    font-size: 5px;
+    font-size: 1.5vh;
+}
+
+.SNS {
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.SNS-TEXT {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+
+.SNS-SIZE {
+
+}
+
+.kakaotalk {
+    max-width: 40px;
+    height: auto;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.gunship-community {
+    max-width: 40px;
+    height: auto;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.youtube {
+    max-width: 40px;
+    height: auto;
+    align-items: center;
+    margin-left: 15px;
 }
