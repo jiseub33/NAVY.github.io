@@ -177,17 +177,17 @@ img {
 }
 
 .panel > li:nth-of-type(1) {
-    background-image: url(images/MAIN-homepage-open.png);
+    background-image: url(images/배너디자인.png);
     background-size: contain;
 }
 
 .panel > li:nth-of-type(2) {    
-    background-image: url(images/MAIN-homepage-open.png);
+    background-image: url(images/배너디자인.png);
     background-size: contain;
 }
 
 .panel > li:nth-of-type(3) {
-    background-image: url(images/MAIN-homepage-open.png);
+    background-image: url(images/배너디자인.png);
     background-size: contain;
 }
 
@@ -275,7 +275,11 @@ img {
 
 .content-1-text {
     font-family: 'Noto Sans KR', sans-ser   if;
+<<<<<<< HEAD
     font-size: 45px;
+=======
+    font-size: 4vh;
+>>>>>>> b09b2edc0170d5d9d15009d81826ac225d332615
     width: 100%;
     max-width: 2000px;
     margin: 0px auto;
