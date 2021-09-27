@@ -233,7 +233,7 @@ img {
 
 .inline-content-2 {
     display: inline-block;
-    width: 49%;
+    width: 49.5%;
     background-color: #f8f8f8;
     height: auto;
     min-width: 300px;
@@ -284,7 +284,7 @@ img {
 }
 
 .content-2-picture {
-    max-width: 400px;
+    max-width: 200px;
     margin: 0 auto;
 }
 
@@ -308,7 +308,7 @@ img {
 .inline-content-3 {
     display: inline-block;
     background-color: #f8f8f8;
-    width: 49%;
+    width: 49.5%;
     height: auto;
     min-width: 300px;
 }
