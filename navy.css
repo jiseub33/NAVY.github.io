@@ -262,8 +262,7 @@ img {
 }
 
 .contents-1 {
-    max-width: 2000px;  
-    background-color: #000000;
+    max-width: 2000px;
     margin: 0 auto;
     margin-top: 50px;
 }
@@ -276,9 +275,9 @@ img {
 
 .content-1-text {
     font-family: 'Noto Sans KR', sans-ser   if;
-    font-size: 5vh;
+    font-size: 45px;
     width: 100%;
-    max-width: 1920x;
+    max-width: 2000px;
     margin: 0px auto;
     color: #ffffff;
     text-align: center;
@@ -288,7 +287,7 @@ img {
 
 .content-1-subtext {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 1.5vh;
+    font-size: 15px;
     max-width: 100%;    
     width: 1920px;
     margin: 0px auto;
@@ -300,8 +299,20 @@ img {
     font-weight: 500;
 }
 
+.content-1-bottom-button {
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.content-1-button {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
 .content-1-picture {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -324,12 +335,155 @@ img {
     color: #ffffff;
 }
 
-.content-1-bottom-button {
+.inline {
+    max-width: 2000px;
+    width: 100%;
     text-align: center;
+    background-color: #ffffff;
 }
 
-.content-1-button {
+.inline-content-2 {
+    display: inline-block;
+    width: 49%;
+    background-color: #f1f1f1;
+}
+
+.content-2 {
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-2-benner {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.content-2-text {
+    font-family: 'Noto Sans KR', sans-ser   if;
+    font-size: 40px;
+    margin: 0px auto;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.content-2-subtext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;  
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.content-2-bottom-button {
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.content-2-button {
     cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+.content-2-picture {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.content-2-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-2-bottom-Explanation {
+    height: 50px;
+}
+
+.content-2-Explanation {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px auto;
+    color: #000000;
+}
+
+.inline-content-3 {
+    display: inline-block;
+    width: 49%;
+    background-color: #f1f1f1;
+}
+
+.content-3 {
+    align-items: center;
+    margin: 0 auto;
+}   
+
+.content-3-benner {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.content-3-text {
+    font-family: 'Noto Sans KR', sans-ser   if;
+    font-size: 40px;
+    margin: 0px auto;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.content-3-subtext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.content-3-bottom-button {
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.content-3-button {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+}
+
+.content-3-picture {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.content-3-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.content-3-bottom-Explanation {
+    height: 50px;
+}
+
+.content-3-Explanation {
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px auto;
+    color: #000000;
 }
 
 footer {
@@ -361,12 +515,12 @@ footer {
 
 .service-center {
     text-align: left;
-    font-size: 1.5vh;
+    font-size: 16px;
 }
 
 .copyright {
     text-align: left;
-    font-size: 1.5vh;
+    font-size: 16px;
 }
 
 .footer-SNS {
