@@ -217,7 +217,7 @@ img {
 .content-1-Explanation {
     font-family: 'Noto Sans KR', sans-serif;
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     max-width: 100%;
     width: 1920px;
     margin: 0px auto;
@@ -228,7 +228,7 @@ img {
     max-width: 2000px;
     width: 100%;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
 }
 
 .inline-content-2 {
@@ -237,6 +237,7 @@ img {
     background-color: #f8f8f8;
     height: auto;
     min-width: 300px;
+    margin-top: 20px;
 }
 
 .content-2 {
@@ -284,7 +285,7 @@ img {
 }
 
 .content-2-picture {
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -299,8 +300,9 @@ img {
 
 .content-2-Explanation {
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     margin: 0px auto;
     color: #000000;
 }
@@ -311,6 +313,7 @@ img {
     width: 49.5%;
     height: auto;
     min-width: 300px;
+    margin-top: 20px;
 }
 
 .content-3 {
@@ -358,7 +361,7 @@ img {
 }
 
 .content-3-picture {
-    max-width: 400px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -373,8 +376,9 @@ img {
 
 .content-3-Explanation {
     font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
     margin: 0px auto;
     color: #000000;
 }
