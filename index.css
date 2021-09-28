@@ -30,7 +30,8 @@ a {
 .header-logo-image {
     width: 180px;
     height: auto;
-    padding-top: 3.5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .header-logo i {
@@ -64,6 +65,8 @@ a {
     right: 32px;
     font-size: 24px;
     color: #000000;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 @media screen and (max-width: 1000px) {
