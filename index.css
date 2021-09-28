@@ -25,13 +25,14 @@ a {
     height: auto;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 .header-logo-image {
     width: 180px;
     height: auto;
     padding-top: 6.5px;
-    padding-bottom: 6.5px;
+    
 }
 
 .header-logo i {
