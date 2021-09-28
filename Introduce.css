@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    margin: 0;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #E2E2E2;
+}
+
+.header-divide {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-logo-image {
+    width: 180px;
+    height: auto;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+}
+
+.header-logo i {
+    color: blue;
+}
+
+.header-menu {
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.header-menu li {
+    padding: 8px 20px;
+}
+
+.header-icons {
+    list-style: none;
+    color: black;
+    display: flex;
+}
+
+.header-icons li {
+    padding: 8px 12px;
+}
+
+.header-toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #000000;
+}
+
+@media screen and (max-width: 1000px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+    }
+
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-menu li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .header-icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-toogleBtn {
+        display: block;
+    }
+
+    .header-menu.active,
+    .header-icons.active {
+        display: flex;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+.visual-area {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-content {
+    width: 100%;
+    max-width: 1400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-text {
+    background-image: url(images/sea.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visual-area-maintext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;   
+    font-weight: 500;
+}
+
+.visual-area-subtext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;   
+    font-weight: 500;
+}
+
+.contents {
+    max-width: 2000px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.contents-1 {
+    max-width: 2000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.content-1-benner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.content-1-text {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0px auto;
+    color: #000000;  
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 28px;   
+    font-weight: 500;
+}
+
+.content-1-subtext {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0px auto;
+    color: #000000;  
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10px;   
+    font-weight: 500;
+}
+
+footer {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-area {
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 2000px;
+    padding: 1.5vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer-text {
+    padding: 20px 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    display: block;
+    float: left;
+}
+
+.service-center {
+    text-align: left;
+    font-size: 16px;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 16px;
+}
+
+.footer-SNS {
+    padding: 20px 20px;
+    display: block;
+    float: right;
+}
+
+.kakaotalk {
+    max-width: 35px;
+    height: auto;
+    display: inline-block;
+}
+
+.gunship-community {
+    max-width: 35px;
+    height: auto;
+    display: inline-block;
+}
+
+.youtube {
+    max-width: 35px;
+    height: auto;
+    display: inline-block;
+}
