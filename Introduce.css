@@ -25,14 +25,13 @@ a {
     height: auto;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .header-logo-image {
     width: 180px;
     height: auto;
-    padding-top: 6.5px;
-    
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .header-logo i {
@@ -66,6 +65,7 @@ a {
     right: 32px;
     font-size: 24px;
     color: #000000;
+    padding: 3.5px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -124,29 +124,32 @@ img {
 
 .visual-area {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     height: auto;
     margin: 0 auto;
 }
 
 .visual-area-content {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1600px;
     height: auto;
     margin: 0 auto;
-}
 
-.visual-area-text {
     background-image: url(images/sea.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
+.visual-area-text {
+    padding: 100px;
+    text-align: center;
+}   
+
 .visual-area-maintext {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 50px;   
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .visual-area-subtext {
@@ -156,33 +159,24 @@ img {
 }
 
 .contents {
-    max-width: 2000px;
+    max-width: 1600px;
     margin: 0 auto;
-    background-color: #f8f8f8;
 }
 
 .contents-1 {
-    max-width: 2000px;
+    max-width: 1600px;
     margin: 0 auto;
     margin-top: 50px;
 }
 
-.content-1-benner {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    align-items: center;
-}
-
 .content-1-text {
-    width: 100%;
-    max-width: 100%; 
-    margin: 0px auto;
-    color: #000000;  
+    padding: 40px;
+    color: #000000;
     
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 28px;   
-    font-weight: 500;
+    font-size: 15px;   
+    font-weight: 100px;
+    line-height: 30px;
 }
 
 .content-1-subtext {
