@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
 
 body {
     margin: 0;
@@ -135,7 +136,7 @@ img {
     height: auto;
     margin: 0 auto;
 
-    background-image: url(images/sea.jpg);
+    background-image: url(images/mountains.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -147,16 +148,18 @@ img {
 }   
 
 .visual-area-maintext {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 35px;   
+    font-family: 'Gowun Batang', serif;
+    font-size: 40px;   
     font-weight: 700;
     white-space: nowrap;
 }
 
 .visual-area-subtext {
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 28px;   
-    font-weight: 500;
+    padding-top: 100px;
+    font-family: 'Gowun Batang', serif;
+    font-size: 15px;   
+    font-weight: 700;
+    color: #FFFFFF;
 }
 
 .contents-1 {
@@ -174,8 +177,8 @@ img {
     padding: 20px;
     color: #000000;
     
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;   
+    font-family: 'Gowun Batang', serif;
+    font-size: 30px;   
     font-weight: 500;
     line-height: 30px;
 }
@@ -218,18 +221,26 @@ img {
 .content-2-maintext {
     color: #000000;
     
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Gowun Batang', serif;
     font-size: 45px;   
     font-weight: 700;
     margin: 10px;
+    padding: 40px 0px;
+
+    background-image: url(images/background-1.png);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content-2-subtext {
     color: #000000;
-    
-    font-family: 'Noto Sans KR', sans-serif;
+    padding-top: 20px;
+
+    font-family: 'Gowun Batang', serif;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
+    line-height: 30px;
     margin: 10px;
 }
 
