@@ -143,7 +143,7 @@ img {
 }
 
 .visual-area-text {
-    padding: 100px;
+    padding: 100px 30px;
     text-align: center;
 }   
 
@@ -165,32 +165,39 @@ img {
 .contents-1 {
     max-width: 1600px;
     margin: 0 auto;
+    padding: 150px 0px;
 }
 
 .contents-1-text {
     max-width: 1600px;
     margin: 0 auto;
-    margin-top: 50px;
 }
 
 .content-1-maintext {
-    padding: 20px;
+    padding: 80px;
     color: #000000;
+    text-align: center;
     
     font-family: 'Gowun Batang', serif;
-    font-size: 30px;   
+    font-size: 50px;   
     font-weight: 500;
     line-height: 30px;
+
+    background-image: url(images/background-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .content-1-subtext {
     width: 100%;
     max-width: 100%; 
     margin: 0px auto;
-    color: #000000;  
+    color: #000000;
+    text-align: center;
     
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 10px;   
+    font-family: 'Gowun Batang', serif;
+    font-size: 20px;   
     font-weight: 500;
 }
 
