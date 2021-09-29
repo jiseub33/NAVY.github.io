@@ -68,7 +68,7 @@ a {
     padding: 3.5px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -148,8 +148,9 @@ img {
 
 .visual-area-maintext {
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 50px;   
+    font-size: 35px;   
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .visual-area-subtext {
@@ -170,7 +171,7 @@ img {
 }
 
 .content-1-maintext {
-    padding: 40px;
+    padding: 20px;
     color: #000000;
     
     font-family: 'Noto Sans KR', sans-serif;
@@ -191,41 +192,58 @@ img {
 }
 
 .content-2 {
-    max-width: 1600px;
     margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.inline-2 {
+    max-width: 1000px;
+    width: 70%;
+    min-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px 6px grey;
 }
 
 .content-2-text {
-    max-width: 790px;
-    vertical-align: top;
+    max-width: 490px;
+    margin: 0 auto;
     display: inline-block;
+    vertical-align: top;
+    border-radius: inherit;
+    text-align: left;
 }
 
 .content-2-maintext {
     color: #000000;
     
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 25px;   
+    font-size: 45px;   
     font-weight: 700;
+    margin: 10px;
 }
 
 .content-2-subtext {
-    color: #000000;  
+    color: #000000;
     
     font-family: 'Noto Sans KR', sans-serif;
-    font-size: 15px;   
+    font-size: 15px;
     font-weight: 500;
+    margin: 10px;
 }
 
-.content-2-picture {
-    max-width: 790px;
+.content-2-picture {    
+    max-width: 490px;
+    margin: 0 auto;
     display: inline-block;
+    border-radius: inherit;
 }
 
 .content-2-image {
-    max-width: 50%;
+    width: 100%;    
     height: auto;
-    align-items: center;
+    border-radius: inherit;
 }
 
 footer {
