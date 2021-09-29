@@ -165,7 +165,6 @@ img {
 .contents-1 {
     max-width: 1600px;
     margin: 0 auto;
-    padding: 150px 0px;
 }
 
 .contents-1-text {
@@ -174,18 +173,13 @@ img {
 }
 
 .content-1-maintext {
-    padding: 80px;
+    padding: 40px;
     color: #000000;
     text-align: center;
     
     font-family: 'Gowun Batang', serif;
     font-size: 50px;   
     font-weight: 500;
-
-    background-image: url(images/background-1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .content-1-subtext {
@@ -200,67 +194,49 @@ img {
     font-weight: 500;
 }
 
-.content-2 {
+.contents-2 {
+    max-width: 1600px;
     margin: 0 auto;
-    padding: 40px 0px;
+    padding: 30px 0px;
+    padding-bottom: 200px;
 }
 
-.inline-2 {
-    max-width: 1000px;
-    width: 70%;
-    min-width: 300px;
+.contents-2-text {
+    max-width: 1600px;
     margin: 0 auto;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 1px 1px 30px 6px grey;
-}
-
-.content-2-text {
-    max-width: 490px;
-    margin: 0 auto;
-    display: inline-block;
-    vertical-align: top;
-    border-radius: inherit;
-    text-align: left;
+    padding: 30px 0px;
 }
 
 .content-2-maintext {
+    padding: 50px;
     color: #000000;
+    text-align: center;
     
     font-family: 'Gowun Batang', serif;
-    font-size: 45px;   
-    font-weight: 700;
-    margin: 10px;
-    padding: 40px 0px;
-
-    background-image: url(images/background-1.png);
-    background-size: 110%;
-    background-repeat: no-repeat;
-    background-position: center;
+    font-size: 50px;   
+    font-weight: 500;
 }
 
 .content-2-subtext {
+    width: 100%;
+    max-width: 100%; 
+    margin: 0px auto;
     color: #000000;
-    padding-top: 20px;
-
+    text-align: center;
+    
     font-family: 'Gowun Batang', serif;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 30px;
-    margin: 10px;
+    font-size: 20px;   
+    font-weight: 500;
 }
 
-.content-2-picture {    
-    max-width: 490px;
-    margin: 0 auto;
-    display: inline-block;
-    border-radius: inherit;
-}
-
-.content-2-image {
-    width: 100%;    
-    height: auto;
-    border-radius: inherit;
+.content-3-maintext {
+    padding: 50px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Gowun Batang', serif;
+    font-size: 30px;   
+    font-weight: 500;
 }
 
 footer {
