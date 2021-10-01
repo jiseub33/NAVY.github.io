@@ -254,13 +254,14 @@ img {
 }
 
 .contents-1-picture {
-    align-items: center;
+    vertical-align: bottom;
     max-width: 1200px;
     height: auto;
     margin: 0 auto;
 }
 
 .content-1-img {
+    vertical-align: bottom;
     max-width: 1200px;
     height: auto;
     width: 100%;
