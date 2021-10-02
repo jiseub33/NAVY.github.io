@@ -200,6 +200,7 @@ img {
     font-weight: 500;
 }
 
+<<<<<<< HEAD
 .content-1-picture-1 {
     text-align: center;
     margin: 0 auto;
@@ -212,6 +213,8 @@ img {
     background-position: center;
 }
 
+=======
+>>>>>>> fb45b8b7d5a74f315e4f9078dba7653a635c4afe
 .content-1-picture {
     text-align: center;
     margin: 0 auto;
@@ -339,7 +342,11 @@ img {
     font-size: 50px;   
     font-weight: 700;
 
+<<<<<<< HEAD
     background-image: url(images/asg-blitz-background.png); 
+=======
+    background-image: url(images/asg-blitz-background.png);
+>>>>>>> fb45b8b7d5a74f315e4f9078dba7653a635c4afe
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
