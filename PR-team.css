@@ -423,16 +423,20 @@ footer {
     color: #000000;
     max-width: 2000px;
     padding: 1.5vw;
-    text-align: center;
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
 }
 
 .footer-text {
-    padding: 20px 20px;
+    padding: 20px 40px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
-    display: block;
-    float: left;
+    text-align: left;
+}
+
+.footer-text-1 {
+    padding: 25px 0px;
 }
 
 .service-center {
@@ -445,26 +449,55 @@ footer {
     font-size: 16px;
 }
 
+.footer-button {
+    margin: 0 auto;
+    padding: 20px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-service {
+    padding: 10px 10px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .footer-SNS {
-    padding: 20px 20px;
-    display: block;
-    float: right;
+    padding: 10px 10px;
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.SNS-SIZE {
+    padding-top: 6px;
 }
 
 .kakaotalk {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    width: auto;
 }
 
 .gunship-community {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    width:auto;
+}
+
+.facebook {
+    padding: 10px 10px;
+    max-height: 35px;
+    width: auto;
 }
 
 .youtube {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    width: auto;
 }
