@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body {
+    margin: 0;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #E2E2E2;
+}
+
+.header-divide {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-logo-image {
+    width: 180px;
+    height: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.header-logo i {
+    color: blue;
+}
+
+.header-menu {
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.header-menu li {
+    padding: 8px 20px;
+}
+
+.header-icons {
+    list-style: none;
+    color: black;
+    display: flex;
+}
+
+.header-icons li {
+    padding: 8px 12px;
+}
+
+.header-toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #000000;
+    padding: 3.5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+    }
+
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-menu li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .header-icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-toogleBtn {
+        display: block;
+    }
+
+    .header-menu.active,
+    .header-icons.active {
+        display: flex;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+.visual-area {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-content {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-text {
+    text-align: center;
+}   
+
+.visual-area-mainimg {
+    max-width: 1600px;
+    width: 100%;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;   
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.visual-area-subtext {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.contents-1 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.contents-1-title {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-1-maintitle {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;   
+    font-weight: 700;
+}   
+
+.content-1-subtitle {
+    padding: 0px 20px;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+}
+
+.contents-1-text {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-1-maintext {
+    margin-top: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;   
+    font-weight: 700;
+
+    background-image: url(images/PR-TEAM-line-black.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}   
+
+.content-1-subtext {
+    margin-bottom: 20px;
+    padding: 10px 10%;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+}
+
+.content-1-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+}
+
+.content-1-img {
+    max-width: 200px;
+    width: 100%;
+
+    border-radius: 100px;
+}
+
+.contents-2 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 70px 0px;
+
+    background-color: #000000;
+}
+
+.contents-2-title {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-2-maintitle {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;   
+    font-weight: 700;
+}   
+
+.content-2-subtitle {
+    padding: 0px 20px;
+    color: #ffffff;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+}
+
+.contents-2-text {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-2-maintext {
+    margin-top: 20px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #ffffff;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;   
+    font-weight: 700;
+
+    background-image: url(images/PR-TEAM-line-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}   
+
+.content-2-subtext {
+    margin-bottom: 20px;
+    padding: 10px 10%;
+    color: #ffffff;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+}
+
+.content-2-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+}
+
+.content-2-img {
+    max-width: 200px;
+    width: 100%;
+
+    border-radius: 100px;
+}
+
+.contents-3 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.contents-3-title {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-3-maintitle {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;   
+    font-weight: 700;
+}   
+
+.content-3-subtitle {
+    padding: 0px 20px;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+}
+
+.contents-3-text {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    border-radius: 100px;
+}
+
+.content-3-picture {
+    padding-top: 100px;
+
+    text-align: center;
+    margin: 0 auto;
+
+    border-radius: inherit;
+}
+
+.content-3-img {
+    max-width: 1300px;
+    width: 100%;    
+    text-align: center;
+
+    border-radius: inherit;
+}
+
+.content-3-maintext {
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;   
+    font-weight: 700;
+
+    border-radius: inherit;
+}   
+
+.content-3-subtext {
+    margin-bottom: 20px;
+    padding: 10px 10%;
+    color: #000000;
+    text-align: left;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+
+    border-radius: inherit;
+}
+
+footer {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-area {
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+    max-width: 2000px;
+    padding: 1.5vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footer-text {
+    padding: 20px 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    display: block;
+    float: left;
+}
+
+.service-center {
+    text-align: left;
+    font-size: 16px;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 16px;
+}
+
+.footer-SNS {
+    padding: 20px 20px;
+    display: block;
+    float: right;
+}
+
+.kakaotalk {
+    max-width: 35px;
+    height: auto;
+    display: inline-block;
+}
+
+.gunship-community {
+    max-width: 35px;
+    height: auto;
+    display: inline-block;
+}
+
+.youtube {
+    max-width: 35px;
+    height: auto;
+    display: inline-block;
+}
