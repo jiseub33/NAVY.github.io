@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+
+
 body {
     margin: 0;
 }
@@ -70,7 +72,7 @@ a {
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -124,15 +126,135 @@ img {
     border: none;
 }
 
+#popup_layer {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+} 
+
+    /*팝업 박스*/
+.popup_box {
+    position: relative;
+    top:50%;left:50%; 
+    max-width: 550px;
+    width:80%;
+    transform:translate(-50%, -50%);
+    z-index:1002;
+    box-sizing:border-box;
+    background:#fff;
+    box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.35);
+}
+
+/*컨텐츠 영역*/
+.popup_box .popup_cont {
+    padding: 10%;
+    line-height:1.4rem;
+    font-size:15px;
+    word-break: break-word;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+}
+
+.popup_box .popup_cont h2 {
+    padding:15px 0;
+    color:#333;
+    margin:0;
+}
+
+.popup_box .popup_cont p{ 
+    border-top: 1px solid #666;
+    padding-top: 30px;
+}
+
+/*버튼영역*/
+.popup_box .popup_btn {
+    display:table;
+    table-layout: fixed;
+    width:100%;height:70px;
+    background:#5d5d5d;
+    word-break: break-word;
+}
+
+.popup_box .popup_btn a {
+    position: relative;
+    display: table-cell;
+    height:70px; color:#fff;
+    font-size:17px;
+    text-align:center;
+    vertical-align:middle;
+    text-decoration:none;
+    background: linear-gradient( 45deg, #8baaaa, #ae8b9c );
+}
+
+.popup_box .popup_btn a:before{
+    content:'';
+    display:block;
+    position:absolute;
+    top:26px;
+    right:29px;
+    width:1px;
+    height:21px;
+    background:#fff;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.popup_box .popup_btn a:after{
+    content:'';
+    display:block;
+    position:absolute;
+    top:26px;
+    right:29px;
+    width:1px;
+    height:21px;
+    background:#fff;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.popup_box .popup_btn a.close_day {
+    background:#5d5d5d;
+
+}
+.popup_box .popup_btn a.close_day:before, .popup_box .popup_btn a.close_day:after{
+    display:none;
+}
+
+/*오버레이 뒷배경*/
+.popup_overlay{position:fixed;top:0px;right:0;left:0;bottom:0;z-index:1001;;background:rgba(0,0,0,0.5);}
+
 .visual-area {
     max-width: 2000px;
     height: auto;
     margin: 0 auto;
 }
 
+.visual-area-content {
+    text-align: center;
+
+    background-image: url(images/event-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 .slide-banner {
-    max-width: 100%;
+    padding: 50px 0px;
+    max-width: 500px;
+    width: 50%;
     height: auto;
 
 }
@@ -537,6 +659,10 @@ img {
 }
 
 footer {
+    width: 100%;
+}
+
+.footer-area-1 {
     border: 1px solid #E2E2E2;
     border-right: 0px solid #FFFFFF;
     border-left: 0px solid #FFFFFF;
@@ -545,54 +671,108 @@ footer {
     height: auto;
 }
 
-.footer-area {
+.footer-text-1 {
+    max-width: 1400px;
     margin: 0 auto;
-    background-color: #ffffff;
-    color: #000000;
-    max-width: 2000px;
-    padding: 1.5vw;
-    text-align: center;
-    overflow: hidden;
-}
-
-.footer-text {
-    padding: 20px 20px;
+    padding: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
-    display: block;
-    float: left;
+    text-align: left;
+}
+
+.footer-text-1-1 {
+    padding: 25px 0px;
 }
 
 .service-center {
     text-align: left;
-    font-size: 16px;
+    font-size: 10px;
+    font-weight: 300;
 }
 
 .copyright {
     text-align: left;
-    font-size: 16px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.footer-area-2 {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-react {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    color: #000000;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-text-2 {
+    padding: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 10px;
+}
+
+.footer-text-2-1 {
+    padding: 25px 0px;
+}
+
+.footer-button-1 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-button-2 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-service {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-SNS {
-    padding: 20px 20px;
-    display: block;
-    float: right;
+    margin: 0 auto;
 }
 
 .kakaotalk {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
 }
 
 .gunship-community {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
+}
+
+.facebook {
+    padding: 10px 10px;
+    max-height: 35px;
+    height: 100%;
 }
 
 .youtube {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
 }
