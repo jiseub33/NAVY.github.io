@@ -215,7 +215,7 @@ img {
 .inline-2 {
     margin: 25px;
     width: 400px;
-    min-width: 350px;
+    min-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 0px 25px 1px rgb(223, 223, 223);
 }
