@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid #E2E2E2;
+}
+
+.header-divide {
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-logo-image {
+    width: 180px;
+    height: auto;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.header-logo i {
+    color: blue;
+}
+
+.header-menu {
+    display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.header-menu li {
+    padding: 8px 20px;
+}
+
+.header-icons {
+    list-style: none;
+    color: black;
+    display: flex;
+}
+
+.header-icons li {
+    padding: 8px 12px;
+}
+
+.header-toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #000000;
+    padding: 3.5px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 24px;
+    }
+
+    .header-menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header-menu li {
+        width: 100%;
+        text-align: right;
+    }
+
+    .header-icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-toogleBtn {
+        display: block;
+    }
+
+    .header-menu.active,
+    .header-icons.active {
+        display: flex;
+    }
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+.visual-area {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+
+    padding-bottom: 30px;
+}
+
+.visual-area-content {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+
+    background-image: url(images/executive.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visual-area-text {
+    padding: 100px 30px;
+    text-align: center;
+}   
+
+.visual-area-maintext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;   
+    font-weight: 700;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.visual-area-subtext {
+    padding-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.contents-1 {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-image: url(images/executive-line.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.contents-1-text {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-1-maintext {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;   
+    font-weight: 500;
+}
+
+.content-1-name {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;   
+    font-weight: 800;
+
+    background-image: url(images/executive-HAPPYMINSEO.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-1-subtext {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 500;
+}
+
+.contents-2 {
+    max-width: 1600px;
+    margin: 0 auto;
+
+    background-image: url(images/executive-line.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.contents-2-text {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-2-maintext {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;   
+    font-weight: 500;
+}
+
+.content-2-name {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;    
+    font-weight: 800;
+
+    background-image: url(images/executive-Cp.Harlock☆.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-3-name {
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;    
+    font-weight: 800;
+
+    background-image: url(images/executive-지구를지켜츄.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-4-name {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;    
+    font-weight: 800;
+
+    background-image: url(images/executive-젶_초호기.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-5-name {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;    
+    font-weight: 800;
+
+    background-image: url(images/executive-80타.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-6-name {
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;    
+    font-weight: 800;
+
+    background-image: url(images/executive-SOFA.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-7-name {
+    padding: 40px;
+    color: #ffffff;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;    
+    font-weight: 800;
+
+    background-image: url(images/executive-치천사.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-2-subtext {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 500;
+}
+
+footer {
+    width: 100%;
+}
+
+.footer-area-1 {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-text-1 {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.footer-text-1-1 {
+    padding: 25px 0px;
+}
+
+.service-center {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.footer-area-2 {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-react {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    color: #000000;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-text-2 {
+    padding: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 10px;
+}
+
+.footer-text-2-1 {
+    padding: 25px 0px;
+}
+
+.footer-button-1 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-button-2 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-service {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-SNS {
+    margin: 0 auto;
+}
+
+.kakaotalk {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
+}
+
+.gunship-community {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
+}
+
+.facebook {
+    padding: 10px 10px;
+    max-height: 35px;
+    height: 100%;
+}
+
+.youtube {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
+}
