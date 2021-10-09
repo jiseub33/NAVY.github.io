@@ -226,8 +226,6 @@ img {
     text-align: left;
 
     padding: 20px;
-
-    overflow: hidden;
 }
 
 .content-2-maintext {
@@ -242,9 +240,6 @@ img {
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;
-
-    display: block;
-    float: right;
 }
 
 .content-2-subtext {
@@ -262,10 +257,8 @@ img {
 }
 
 .content-2-picture {
+    margin-top: 50px;
     text-align: center;
-
-    display: block;
-    float: left;
 }
 
 .content-2-image {
