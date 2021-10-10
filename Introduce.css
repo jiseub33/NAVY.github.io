@@ -69,7 +69,7 @@ a {
     padding: 3.5px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -136,7 +136,7 @@ img {
     height: auto;
     margin: 0 auto;
 
-    background-image: url(images/mountains.png);
+    background-image: url(images/Introduce/mountains.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -174,25 +174,22 @@ img {
 }
 
 .content-1-maintext {
-    padding: 80px;
+    padding: 40px;
     color: #000000;
     text-align: center;
     
     font-family: 'Gowun Batang', serif;
     font-size: 50px;   
     font-weight: 500;
-    line-height: 30px;
 
-    background-image: url(images/background-1.png);
+    background-image: url(images/Introduce/MAINTEXT-background.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .content-1-subtext {
-    width: 100%;
-    max-width: 100%; 
-    margin: 0px auto;
+    padding: 20px;
     color: #000000;
     text-align: center;
     
@@ -234,7 +231,7 @@ img {
     margin: 10px;
     padding: 40px 0px;
 
-    background-image: url(images/background-1.png);
+    background-image: url(images/Introduce/MAINTEXT-background.png);
     background-size: 110%;
     background-repeat: no-repeat;
     background-position: center;
@@ -265,6 +262,10 @@ img {
 }
 
 footer {
+    width: 100%;
+}
+
+.footer-area-1 {
     border: 1px solid #E2E2E2;
     border-right: 0px solid #FFFFFF;
     border-left: 0px solid #FFFFFF;
@@ -273,54 +274,120 @@ footer {
     height: auto;
 }
 
-.footer-area {
+.footer-text-1 {
+    max-width: 1400px;
     margin: 0 auto;
-    background-color: #ffffff;
-    color: #000000;
-    max-width: 2000px;
-    padding: 1.5vw;
-    text-align: center;
-    overflow: hidden;
-}
-
-.footer-text {
-    padding: 20px 20px;
+    padding: 20px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
-    display: block;
-    float: left;
+    text-align: left;
+}
+
+.footer-text-1-1 {
+    padding: 25px 0px;
 }
 
 .service-center {
     text-align: left;
-    font-size: 16px;
+    font-size: 10px;
+    font-weight: 300;
 }
 
 .copyright {
     text-align: left;
-    font-size: 16px;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.footer-area-2 {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-react {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    color: #000000;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-text-2 {
+    padding: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 10px;
+}
+
+.footer-text-2-1 {
+    padding: 25px 0px;
+}
+
+.footer-button-1 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-button-2 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-service {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-SNS {
-    padding: 20px 20px;
-    display: block;
-    float: right;
+    margin: 0 auto;
+}
+
+.sitemap {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
+}
+
+.PR-team {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
 }
 
 .kakaotalk {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
 }
 
 .gunship-community {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
+}
+
+.facebook {
+    padding: 10px 10px;
+    max-height: 35px;
+    height: 100%;
 }
 
 .youtube {
-    max-width: 35px;
-    height: auto;
-    display: inline-block;
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
 }
