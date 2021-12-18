@@ -263,6 +263,32 @@ img {
     padding: 30px 0px;
 }
 
+.slide-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 20px 0px;
+    font-size: 50px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-shadow:  0 0 7px #FFFFFF;
+}
+
+.slide-maintext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow:  0 0 7px #FFFFFF;
+}
+
+.slide-subtext {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-shadow:  0 0 7px #FFFFFF;
+}
+
 .slide-banner-button {
     width: 100%;
     max-width: 300px;
@@ -285,16 +311,42 @@ img {
     max-width: 2000px;
     height: auto;
     margin: 0 auto;
+
+    background: linear-gradient(to bottom right, #a0b7df, #729be7)
 }
 
 .visual-area-m-content {
     text-align: center;
-
-    background: linear-gradient(to bottom, #dce5f4, #90abdc)
 }
 
 .slide-banner-m {
     width: 100%;
+}
+
+.slide-title-m {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 20px 0px;
+    font-size: 30px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-shadow:  0 0 7px #FFFFFF;
+}
+
+.slide-maintext-m {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-shadow:  0 0 7px #FFFFFF;
+}
+
+.slide-subtext-m {
+    font-family: 'Noto Sans KR', sans-serif;
+    padding-bottom: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-shadow:  0 0 7px #FFFFFF;
 }
 
 .slide-banner-m-sns {
