@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+
+body {
+    margin: 0;
+    background-image: url(images/for_24HRS/coffee.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visual-area {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+
+    box-shadow: 0px 0px 100px 0.1px #000000;
+}
+
+.visual-area-content {
+    width: 100%;
+}
+
+.visual-area-text {
+    text-align: center;
+
+    background-image: url(images/for_24HRS/airmail.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 100px;
+}   
+
+.visual-area-maintext {
+    font-family: 'Gowun Batang', serif;
+    font-size: 40px;   
+    font-weight: 700;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.visual-area-subtext {
+    padding-top: 50px;
+    font-family: 'Gowun Batang', serif;
+    font-size: 15px;   
+    font-weight: 700;
+    margin: 0;
+}
+
+.contents {
+    max-width: 1600px;
+    background-image: url(images/for_24HRS/paper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+
+    box-shadow: 0px 0px 100px 0.1px #000000;
+}
+
+.contents-1 {
+    text-align: center;
+}
+
+.content-1-benner {
+    padding: 50px;
+}
+
+.content-1-text {
+    font-family: 'Gowun Batang', serif;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.content-1-subtext {
+    font-family: 'Gowun Batang', serif;
+    font-size: 15px;      
+    text-align: left;
+    font-weight: 700;
+    line-height: 50px;
+}
