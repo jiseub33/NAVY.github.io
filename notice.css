@@ -218,6 +218,7 @@ img {
     min-width: 300px;
     border-radius: 10px;
     box-shadow: 0px 0px 25px 1px rgb(223, 223, 223);
+    transition: all 1s;
 }
 
 .inline-2:hover {
