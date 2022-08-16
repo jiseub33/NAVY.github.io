@@ -42,6 +42,7 @@ ul {
 }
 
 li {
+    overflow: hidden;
     position: relative;
     text-align: left;
     margin: 25px;
@@ -52,17 +53,30 @@ li {
     list-style: none;
 }
 
-li:hover image {
-    position: relative;
+li.active {
+    overflow: visible   ;
 }
 
 li:hover img {
+    transform: scale(1.2);
+}
+
+li.active img.normal {
+    position: relative;
+}
+
+li.active img.hover {
     z-index: 1000;
     position: absolute;
+    left: 0;
+}
+
+li.active:hover img {
     transform: scale(100);
 }
 
 div.image {
+    overflow: hidden;
     margin: 0 auto;
 }
 
@@ -71,7 +85,11 @@ div.image {
     height: auto;
     vertical-align: bottom;
     border-radius: 20px 20px 0 0;
-    transition: all 10s;
+    transition: all 1s;
+}
+
+li.active img {
+    transition: all 50s;
 }
 
 .mainlogo {
