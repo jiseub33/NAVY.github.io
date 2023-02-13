@@ -1,0 +1,325 @@
+.visual-area {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-content {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+
+    background-image: url(../images/Asg-Blitz/Background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visual-area-text {
+    padding: 100px 30px;
+    text-align: center;
+}   
+
+.visual-area-maintext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;   
+    font-weight: 700;
+    color: #000000;
+}
+
+.visual-area-subtext {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 700;
+    color: #000000;
+}
+
+.contents-1 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.contents-1-title {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-1-maintitle {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;   
+    font-weight: 700;
+
+    background-image: url(../images/Asg-Blitz/asg-line.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+
+.content-1-subtitle {
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+}
+
+.content-1-picture-1 {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+
+    background-image: url(../images/Asg-Blitz/asg-time-background-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-1-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+
+    background-image: url(../images/Asg-Blitz/asg-blitz-time-background-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-2-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+
+    background-image: url(../images/Asg-Blitz/asg-blitz-time-background-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-3-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+
+    background-image: url(../images/Asg-Blitz/asg-blitz-time-background-3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-4-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+
+    background-image: url(../images/Asg-Blitz/asg-blitz-time-background-4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-5-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+
+    background-image: url(../images/Asg-Blitz/asg-blitz-time-background-5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-6-picture {
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    padding: 30px 0px;
+
+    background-image: url(../images/Asg-Blitz/asg-blitz-time-background-6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-1-img {
+    max-width: 200px;
+    width: 100%;
+
+    border-radius: 100px;
+}
+
+.contents-1-text {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-1-maintext {
+    padding: 0px 20px;
+    padding-top: 100px;
+    color: #000000;
+    text-align: center;
+
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 45px;   
+    font-weight: 700;
+}
+
+.content-1-subtext {
+    padding: 30px 10px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 500;
+}
+
+.contents-2 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+
+.contents-2-title {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-2-maintitle {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 50px;   
+    font-weight: 700;
+
+    background-image: url(../images/Asg-Blitz/blitz-line.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+
+.content-2-subtitle {
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;   
+    font-weight: 500;
+}
+
+.content-2-img {
+    max-width: 200px;
+    width: 100%;
+
+    border-radius: 100px;
+}
+
+.contents-2-text {
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-2-maintext-1 {
+    padding: 0px 20px;
+    padding-top: 50px;
+    color: #000000;
+    text-align: center;
+
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 45px;   
+    font-weight: 700;
+}
+
+.content-2-subtext-1 {
+    padding: 30px 10px;
+    color: #000000;
+    text-align: center;
+
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 500;
+}
+
+.content-2-maintext-2 {
+    padding: 0px 20px;
+    color: #000000;
+    text-align: center;
+
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 45px;   
+    font-weight: 700;
+}
+
+.content-2-subtext-2 {
+    padding: 0px 10px;
+    padding-top: 100px;
+    color: #000000;
+    text-align: center;
+
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 500;
+}
+
+.content-2-picture-1 {
+    text-align: center;
+}
+
+.content-2-img-1-background {
+    margin-top: 50px;
+    background-color: #000000;
+    max-width: 1400px;
+    min-width: 300px;
+    width: 49.5%;
+    display: inline-block;
+}
+
+.content-2-img-2-background {
+    margin-top: 50px;
+    background-color: #ffffff;
+    max-width: 1400px;
+    min-width: 300px;
+    width: 49.5%;
+    display: inline-block;
+}
+
+.content-2-img-1 {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.content-2-img-2 {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+}
