@@ -1,10 +1,10 @@
 const toogleBtn = document.querySelector('.header-toogleBtn')
+const mobile = document.querySelector('.header-mobile')
 const menu = document.querySelector('.header-menu')
-const icons = document.querySelector('.header-icons')
 
 toogleBtn.addEventListener('click', () => {
+    mobile.classList.toggle('active');
     menu.classList.toggle('active');
-    icons.classList.toggle('active');
 });
 
 function setCookie( name, value, expiredays ) {  // 쿠키저장
