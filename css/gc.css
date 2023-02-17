@@ -150,6 +150,7 @@
     }
 
     .content-1 .content-1-text {
+        -webkit-text-stroke: .5px #5096F2;
         font-size: 10vw;
         line-height: 10vw;
     }
@@ -196,6 +197,22 @@
     color: #5096F2;
 }
 
+@media screen and (max-width: 1200px) {
+    .content-2 {
+        padding: 10px;
+    }
+
+    .content-2 h1 {
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .content-2 p {
+        font-size: .5rem;
+    }
+}
+
+
 .content-3 {
     width: 100%;
     max-width: 2000px;
@@ -205,7 +222,7 @@
 }
 
 .content-3 .content-1-manual {
-
+    background: #fff;
 }
 
 .content-3 .content-1-manual input {
@@ -222,79 +239,68 @@
     font-weight: 600;
     -webkit-text-stroke: 1px #5096F2;
     color: #fff;
+    cursor: pointer;
 }
 
 .content-3 .content-1-manual input.install:checked + label {
     color: #5096F2;
+    background: #F2F2F2;
+    border-radius: 0 25px 0 0;
 }
 
 .content-3 .content-1-manual input.use:checked + label {
     color: #5096F2;
+    background: #F2F2F2;
+    border-radius: 25px 0 0 0;
 }
 
-.content-3 .content-1-manual input.install:checked ~ div.install {
+.content-3 .content-1-manual input.install:checked ~ div div.install {
     display: block;
 }
 
-.content-3 .content-1-manual input.use:checked ~ div.use {
+.content-3 .content-1-manual input.use:checked ~ div div.use {
     display: block;
-}
-
-.content-3 .content-1-manual > div {
-    display: none;
-    font-size: 50px;
-}
-
-.content-3 .content-1-manual div.install {
-    font-size: 50px;
-}
-
-.content-3 .content-1-manual div.use {
-    font-size: 50px;
 }
 
 .content-3 .content-1-manual div {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    background: #F2F2F2;
 }
 
-.content-3 .content-1-manual div ul {
-    padding: 10px;
+.content-3 .content-1-manual div > div{
+    display: none;
 }
 
-.content-3 .content-1-manual div ul li {
+.content-3 .content-1-manual div div ul {
+    padding: 50px 10px;
+}
+
+.content-3 .content-1-manual div div ul li {
     display: flex;
     margin: 50px 0;
 }
 
-.content-3 .content-1-manual div ul li div {
+.content-3 .content-1-manual div div ul li div {
     width: 50%;
 }
 
 
-.content-3 .content-1-manual div ul li .title {
+.content-3 .content-1-manual div div ul li .title {
     padding: 20px;
     box-sizing: border-box;
     text-align: left;
 }
 
-@media screen and (max-width: 1200px) {
-    .content-3 .content-1-manual div ul li .title {
-        padding: 10px;
-    }
-}
-
-.content-3 .content-1-manual div ul li .title h1 {
+.content-3 .content-1-manual div div ul li .title h1 {
     font-size: 30px;
 }
 
-.content-3 .content-1-manual div ul li .title p {
+.content-3 .content-1-manual div div ul li .title p {
     padding: 20px 0 0 0;
     font-size: 20px;
 }
 
-.content-3 .content-1-manual div ul li .title a.button {
+.content-3 .content-1-manual div div ul li .title a.button {
     display: block;
     margin: 10px;
     padding: 5px;
@@ -308,33 +314,70 @@
     transition: .5s all;
 }
 
-.content-3 .content-1-manual div ul li .title a.button:hover {
+.content-3 .content-1-manual div div ul li .title a.button:hover {
     background: #F2F2F2;
 
 }
 
-@media screen and (max-width: 1200px) {
-    .content-3 .content-1-manual div ul li .title p {
-        font-size: 15px;
-    }
-    
-    .content-3 .content-1-manual div ul li .title a.button {
-        font-size: 20px;
-        line-height: 30px;
-        border-radius: 30px;
-    }
+.content-3 .content-1-manual div div ul li .title img.qr {
+    padding: 10px;
+    width: 10%;
+    min-width: 150px;
 }
 
-.content-3 .content-1-manual div ul li .img {
+.content-3 .content-1-manual div div ul li .img {
     margin: 0 auto;
     width: 300px;
     font-size: 0;
 }
 
-.content-3 .content-1-manual div ul li .img img {
+.content-3 .content-1-manual div div ul li .img img {
     width: 100%;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 1200px) {
+    .content-3 .content-1-manual label {
+        padding: 0;
+        font-size: 8vw;
+        -webkit-text-stroke: .5px #5096F2;
+    }
+
+    .content-3 .content-1-manual div div ul li {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .content-3 .content-1-manual div div ul li .title {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-3 .content-1-manual div div ul li .title p {
+        padding: 20px 0 0 0;
+        font-size: 2vw;
+    }
+    
+    .content-3 .content-1-manual div div ul li .title a.button {
+        margin: 20px 0 0 0;
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+        border-radius: 30px;
+    }
+
+    .content-3 .content-1-manual div div ul li .title img.qr {
+        padding: 20px 0 0 0;
+        width: 50%;
+    }
+
+    .content-3 .content-1-manual div div ul li .img {
+        width: 100%;
+    }
+}
+
 
 .content-4 {
     padding: 50px;
@@ -376,4 +419,18 @@
     font-size: 50px;
     font-weight: 100;
     line-height: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .content-4 a {
+        margin: 50px 0 0 0;
+        padding: 10px 50px;
+        box-sizing: border-box;
+        background: #edd600;
+        border-radius: 25px;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 100;
+        line-height: 25px;
+    }
 }

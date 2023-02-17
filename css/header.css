@@ -92,11 +92,13 @@ li {
     }
 
     .header-mobile {
+        position: fixed;
         display: block;
+        width: 100%;
         height: 84px;
         background: #fff;
         transition: 1s all;
-        z-index: -1;
+        z-index: 1;
     }
 
     .header-mobile-menu {
