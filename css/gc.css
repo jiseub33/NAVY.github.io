@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 1200px) {
     .visual-area-content {
-        height: calc(100vh - 85px);
+        height: 100vh;
     }
 }
 
@@ -184,6 +184,7 @@
     font-size: 50px;
     font-weight: 800;
     box-sizing: border-box;
+    transition: .5s all;
 }
 
 .content-2 p {
@@ -191,6 +192,7 @@
     color: #000;
     font-size: 30px;
     font-weight: 300;
+    transition: .5s all;
 }
 
 .content-2 span {
@@ -204,11 +206,12 @@
 
     .content-2 h1 {
         padding: 0;
-        font-size: 1.5rem;
+        font-size: 5vw;
     }
 
     .content-2 p {
-        font-size: .5rem;
+        padding: 5px 0 0 0;
+        font-size: 3.5vw;
     }
 }
 
@@ -277,6 +280,7 @@
 
 .content-3 .content-1-manual div div ul li {
     display: flex;
+    flex-direction: row-reverse;
     margin: 50px 0;
 }
 
@@ -294,12 +298,14 @@
 .content-3 .content-1-manual div div ul li .title h1 {
     font-size: 30px;
     font-weight: 900;
+    transition: .5s all;
 }
 
 .content-3 .content-1-manual div div ul li .title p {
     padding: 20px 0 0 0;
     font-size: 20px;
     font-weight: 300;
+    transition: .5s all;
 }
 
 .content-3 .content-1-manual div div ul li .title a.button {
@@ -324,7 +330,7 @@
 .content-3 .content-1-manual div div ul li .title img.qr {
     padding: 10px;
     width: 10%;
-    min-width: 150px;
+    min-width: 100px;
 }
 
 .content-3 .content-1-manual div div ul li .img {
@@ -348,39 +354,42 @@
     .content-3 .content-1-manual div div ul li {
         display: block;
         margin: 0 auto;
-        width: 80%;
+        width: 100%;
+    }
+
+    .content-3 .content-1-manual div div ul li ~ li{
+        margin: 50px 0 0 0;
     }
 
     .content-3 .content-1-manual div div ul li .title {
-        padding: 20px;
+        padding: 5vw 0;
         width: 100%;
         text-align: center;
     }
 
     .content-3 .content-1-manual div div ul li .title h1 {
-        font-size: 2rem;
+        font-size: 8vw;
     }
 
     .content-3 .content-1-manual div div ul li .title p {
-        padding: 20px 0 0 0;
-        font-size: 1.25rem;
+        font-size: 3.5vw;
     }
     
     .content-3 .content-1-manual div div ul li .title a.button {
-        margin: 20px 0 0 0;
-        width: 100%;
-        font-size: 20px;
-        line-height: 30px;
-        border-radius: 30px;
+        margin: 20px auto 0;
+        width: 80%;
+        font-size: 5vw;
+        line-height: 7vw;
+        border-radius: 7vw;
     }
 
     .content-3 .content-1-manual div div ul li .title img.qr {
         padding: 20px 0 0 0;
-        width: 50%;
+        width: 30%;
     }
 
     .content-3 .content-1-manual div div ul li .img {
-        width: 100%;
+        width: 70%;
     }
 }
 
