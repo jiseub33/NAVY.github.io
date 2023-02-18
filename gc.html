@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/gc.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/ee16aa8759.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="main.js" defer></script>
 </head>
 
@@ -80,33 +81,74 @@
                 </div>
                 <div class="info">
                     <div class="title">
-                        <div class="create">
-                            <h1>제작자</h1>
-                            <p>Create by EON</p>
-                        </div>
                         <div class="text">
                             <h1>앱소개</h1>
-                            <p>이제 쿠폰사용을 더 EASY하고 빠르게 한곳에서!</p>
+                            <p>이제 쿠폰사용을 더 EASY하고 빠르게 한곳에서!
+                                <br>건쉽배틀 토탈워페어 게임에서의 쿠폰사용을 더욱 더 쉽게 하실 수 있도록 지원해주는 앱입니다.
+                                <br>
+                                <br>❇️새로운기능
+                                <br>시스템의 테마에 따라 LIGHT모드, DARK모드로 전환되요!
+                                <br>
+                                <br>❇️기본기능
+                                <br>Progressive Web APP 기술을 사용해 앱처럼 쓸 수 있어요!
+                                <br>사용가능 쿠폰, 기간만료 쿠폰 필터링 기능이 있어요!
+                                <br>
+                                <br>PWA는 브라우저 및 OS환경에 따라 PWA지원이 안될 수 있습니다.
+                                <br>웹으로서의 사용은 어느환경에서도 잘 작동 됩니다.
+                                <br>
+                                <br>✅테스트 완료 브라우저 : Chrome, 삼성인터넷, 네이버웨일
+                                <br>✅테스트 완료 OS : Android, Windows
+                            </p>
+                        </div>
+                        <div class="os">
+                            <h1>OS</h1>
+                            <img src="images/gc/Android.png" alt="">
+                            <img src="images/gc/Windows.svg" alt="">
+                        </div>
+                        <div class="create">
+                            <h1>제작자</h1>
+                            <p>비밀 >.<</p>
+                        </div>
+                        <div class="support">
+                            <h1>지원</h1>
+                            <a href="https://pf.kakao.com/_mxhHSs">
+                               <p>카카오채널</p><img src="images/gc/kakao.png" alt="">
+                            </a>
+                        </div>
+                        <div class="pwa">
+                           <p>Powered by</p><img src="images/gc/pwa.svg" alt="">
                         </div>
                     </div>
                     <div class="shortcut">
-                        <ul>
-                            <li>
-                                <img src="images/gc/shortcut/1.jpg" alt="">
+                        <button onclick="moveScrollright()"><img src="images/gc/arrow-left-s-line.svg" alt=""></button>
+                        <button onclick="moveScrollLeft()"><img src="images/gc/arrow-right-s-line.svg" alt=""></button>
+                        <ul class="shortcuts">
+                            <li class="youtube">
+                                <div>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EACm51QFKhw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </li>
                             <li>
                                 <img src="images/gc/shortcut/1.jpg" alt="">
                             </li>
                             <li>
-                                <img src="images/gc/shortcut/1.jpg" alt="">
+                                <img src="images/gc/shortcut/2.jpg" alt="">
                             </li>
                             <li>
-                                <img src="images/gc/shortcut/1.jpg" alt="">
+                                <img src="images/gc/shortcut/3.jpg" alt="">
                             </li>
                             <li>
-                                <img src="images/gc/shortcut/1.jpg" alt="">
+                                <img src="images/gc/shortcut/4.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="images/gc/shortcut/5.jpg" alt="">
                             </li>
                         </ul>
+                    </div>
+                    <div class="start">
+                        <a href="https://gbtwcoupon.jisby.com">시작하기</a>
+                        <a href="#manual"><label for="install">설치방법</label></a>
+                        <a href="#manual"><label for="use">사용방법</label></a>
                     </div>
                 </div>
             </div>
@@ -190,7 +232,7 @@
             </div>
             -->
         </div>
-        <div class="content-3">
+        <div class="content-3" id="manual">
             <div class="content-1-manual">
                 <input type="radio" id="install" name="filter" class="install" checked><label for="install" class="install">설치방법</label>
                 <input type="radio" id="use" name="filter" class="use"><label for="use" class="use">사용방법</label>
