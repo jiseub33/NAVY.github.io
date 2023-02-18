@@ -7,12 +7,12 @@ toogleBtn.addEventListener('click', () => {
     menu.classList.toggle('active');
 });
 
-function moveScrollright() {
-	var _scrollX = $('.shortcuts').scrollLeft();
-	$('.shortcuts').scrollLeft(_scrollX - 200);
-};
-
-function moveScrollLeft() {
+moveScrollLeft = function() {
 	var _scrollX = $('.shortcuts').scrollLeft();
 	$('.shortcuts').scrollLeft(_scrollX + 200);
+};
+
+moveScrollright = function() {
+	var _scrollX = $('.shortcuts').scrollLeft();
+	$('.shortcuts').scrollLeft(_scrollX - 200);
 };
