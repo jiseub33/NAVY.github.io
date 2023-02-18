@@ -151,14 +151,14 @@
     }
 
     .content .content-benner .name h1 {
-        font-size: 8vw;
-        line-height: 8vw;
+        font-size: 10vw;
+        line-height: 10vw;
     }
     
     .content .content-benner .name p {
         padding: 10px 0 0 0;
-        font-size: 3px;
-        line-height: 3vw;
+        font-size: 4vw;
+        line-height: 4vw;
     }
 }
 
@@ -207,11 +207,11 @@
 
 @media screen and (max-width: 1200px) {
     .content .content-benner .info .title div h1 {
-        font-size: 5vw;
+        font-size: 7vw;
     }
     
     .content .content-benner .info .title div p {
-        font-size: 2vw;
+        font-size: 5vw;
     }
 }
 
@@ -425,10 +425,11 @@
     .content .content-benner .info .start a {
         display: block;
         padding: 10px 30px;
-        margin: 5px 2.5px;
+        margin: 10px 2.5px;
         border-radius: 5vw;
-        font-size: 3vw;
-        line-height: 3vw;
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 4vw;
     }
 }
 
