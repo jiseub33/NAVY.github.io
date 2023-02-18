@@ -31,13 +31,14 @@ $(function(){
 function closePop() { 
 	document.getElementById("popup_layer").style.display = "none";
 }
-
-moveScrollLeft = function() {
-	var _scrollX = $('.shortcuts').scrollLeft();
-	$('.shortcuts').scrollLeft(_scrollX + 200);
-};
-
-moveScrollright = function() {
-	var _scrollX = $('.shortcuts').scrollLeft();
-	$('.shortcuts').scrollLeft(_scrollX - 200);
-};
+window.onload = function(){
+	moveScrollLeft = function() {
+		var _scrollX = $('.shortcuts').scrollLeft();
+		$('.shortcuts').scrollLeft(_scrollX + 200);
+	};
+	
+	moveScrollright = function() {
+		var _scrollX = $('.shortcuts').scrollLeft();
+		$('.shortcuts').scrollLeft(_scrollX - 200);
+	};
+}
