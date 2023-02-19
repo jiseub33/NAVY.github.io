@@ -141,13 +141,15 @@
 @media screen and (max-width: 1200px) {
     .content .content-benner .logo-canvas {
         display: block;
-        margin: 15vw auto;
+        margin: 10vw auto;
         width: 25vw;
+        border-radius: 15px;
     }
 
     .content .content-benner .name {
         display: block;
         padding: 10px;
+        text-align: center;
     }
 
     .content .content-benner .name h1 {
@@ -166,7 +168,7 @@
     position: relative;
     display: flex;
     align-items: flex-start;
-    margin: 100px auto;
+    margin: 50px auto;
     max-width: 1600px;
     text-align: left;
 }
@@ -205,13 +207,19 @@
     transition: .5 all;
 }
 
+.content .content-benner .info .title div span {
+    padding: 0 0 0 19px;
+    background: url(../images/gc/checkbox-fill.svg) no-repeat left 3px top 5px;
+    background-size: 13px;
+}
+
 @media screen and (max-width: 1200px) {
     .content .content-benner .info .title div h1 {
         font-size: 7vw;
     }
     
     .content .content-benner .info .title div p {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 }
 
@@ -427,9 +435,9 @@
         padding: 10px 30px;
         margin: 10px 2.5px;
         border-radius: 5vw;
-        font-size: 4vw;
+        font-size: 3vw;
         font-weight: 400;
-        line-height: 4vw;
+        line-height: 5vw;
     }
 }
 
