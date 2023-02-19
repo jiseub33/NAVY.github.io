@@ -207,7 +207,19 @@
     transition: .5 all;
 }
 
-.content .content-benner .info .title div span {
+.content .content-benner .info .title div span.new {
+    padding: 0 0 0 19px;
+    background: url(../images/gc/refresh-fill.svg) no-repeat left 3px top 5px;
+    background-size: 13px;
+}
+
+.content .content-benner .info .title div span.normal {
+    padding: 0 0 0 19px;
+    background: url(../images/gc/information-fill.svg) no-repeat left 3px top 5px;
+    background-size: 13px;
+}
+
+.content .content-benner .info .title div span.test {
     padding: 0 0 0 19px;
     background: url(../images/gc/checkbox-fill.svg) no-repeat left 3px top 5px;
     background-size: 13px;
