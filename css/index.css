@@ -5,9 +5,102 @@
 }
 
 .visual-area-content {
+    position: relative;
+    width: 100%;
+    height: 800px;
     text-align: center;
+    background: #5096F2;
+}
 
-    background: linear-gradient( to right, #0069fa, #00204c, #000000);
+.visual-area-content .title h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.visual-area-content .title p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.visual-area-content a {
+    padding: 10px 30px;
+    margin: 0 5px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 50px;
+    color: #5096F2;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    transition: .5s all;
+}
+
+@media screen and (min-width: 1200px) {
+    .visual-area-content {
+        
+    }
+    
+    .visual-area-content img {
+        position: absolute;
+        top: 50%;
+        left: 15%;
+        width: 250px;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .visual-area-content .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80%;
+        text-align: right;
+        transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .visual-area-content a {
+        display: inline-block;
+        position: absolute;
+        top: 80%;
+        left: 85%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .visual-area-content {
+        height: auto;
+    }
+    
+    .visual-area-content img {
+        position: sticky;
+        display: block;
+        margin: 0 auto;
+        width: 30%;
+    }
+    
+    .visual-area-content .title {
+        position: sticky;
+        display: block;
+        padding: 50px 0;
+    }
+
+    .visual-area-content .title h1 {
+        font-size: 5vw;
+    }
+    
+    .visual-area-content .title p {
+        font-size: 3vw;
+    }
+    
+    .visual-area-content a {
+        position: sticky;
+        display: inline-block;
+        margin: 0 0 50px 0;
+        font-size: 3vw;
+        line-height: 5vw;
+    }
 }
 
 .slide-banner {
@@ -15,7 +108,6 @@
     max-width: 500px;
     width: 80%;
     height: auto;
-
 }
 
 .contents {
