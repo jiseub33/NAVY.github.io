@@ -1,0 +1,131 @@
+footer {
+    width: 100%;
+}
+
+.footer-area-1 {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-text-1 {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+
+.footer-text-1-1 {
+    padding: 25px 0px;
+}
+
+.service-center {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.footer-area-2 {
+    border: 1px solid #E2E2E2;
+    border-right: 0px solid #FFFFFF;
+    border-left: 0px solid #FFFFFF;
+    margin: 0px auto;
+    width: 100%;
+    height: auto;
+}
+
+.footer-react {
+    max-width: 1400px;
+    margin: 0 auto;
+
+    color: #000000;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-text-2 {
+    padding: 5px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    font-size: 10px;
+}
+
+.footer-text-2-1 {
+    padding: 25px 0px;
+}
+
+.footer-button-1 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-button-2 {
+    margin: 0 auto;
+    padding: 0px 40px;
+    text-align: right;
+    display: flex;
+}
+
+.footer-service {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-SNS {
+    margin: 0 auto;
+}
+
+.sitemap {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
+}
+
+.PR-team {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
+}
+
+.kakaotalk {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;   
+}
+
+.gunship-community {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
+}
+
+.facebook {
+    padding: 10px 10px;
+    max-height: 35px;
+    height: 100%;
+}
+
+.youtube {
+    padding: 10px 5px;
+    max-height: 35px;
+    height: 100%;
+}

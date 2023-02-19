@@ -1,0 +1,140 @@
+.visual-area {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-content {
+    width: 100%;
+    max-width: 1600px;
+    height: auto;
+    margin: 0 auto;
+
+    background-image: url(../images/server/server-room.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visual-area-text {
+    padding: 100px 30px;
+    text-align: center;
+}   
+
+.visual-area-maintext {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;   
+    font-weight: 900;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+.visual-area-subtext {
+    padding-top: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;   
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.contents-1 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 150px 0px;
+}
+
+.contents-1-text {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.content-1-maintext {
+    padding: 40px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Gowun Batang', serif;
+    font-size: 50px;   
+    font-weight: 500;
+
+    background-image: url(../images/background-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.content-1-subtext {
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+    
+    font-family: 'Gowun Batang', serif;
+    font-size: 50px;   
+    font-weight: 500;
+}
+
+.content-1-subtext-1 {
+    padding: 20px 20px;
+    margin: 20px 20px;
+}
+
+.content-2 {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+
+.content-2-inline {
+    box-shadow: 0px 0px 25px 1px rgb(223, 223, 223);
+    border-radius: 10px;
+    background-color: #fafafa;
+}
+
+.content-2-text {
+    width: 80%;
+    margin: 50px auto;
+    border-radius: inherit;
+    text-align: left;
+
+    padding: 20px;
+}
+
+.content-2-maintext {
+    color: #000000;
+    padding-bottom: 15px;
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 30px;   
+    font-weight: 700;
+
+    background-image: url(../images/line-black.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.content-2-subtext {
+    color: #414141;
+    margin-top: 20px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.content-2-subtext-1 {
+    margin-top: 20px;
+}
+
+.content-2-picture {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.content-2-image {
+    max-width: 100px;
+    width: 100%;
+}

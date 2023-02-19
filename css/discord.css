@@ -1,0 +1,64 @@
+@media screen and (max-width: 1200px) {
+    .visual-area {
+        display: none;
+    }
+}
+
+.visual-area {
+    max-width: 2000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-content {
+    text-align: center;
+
+    background-color: #363940;
+}
+
+.slide-banner {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+
+}
+
+.slide-button {
+    padding-bottom: 50px;
+    max-width: 300px;
+    width: 80%;
+    height: auto;
+}
+
+@media screen and (min-width: 1200px) {
+    .visual-area-m {
+        display: none;
+    }
+}
+
+.visual-area-m {
+    max-width: 2000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.visual-area-content-m {
+    text-align: center;
+
+    background-color: #363940;
+}
+
+.slide-banner-m {
+    padding: 50px 0px;
+    max-width: 500px;
+    width: 50%;
+    height: auto;
+
+}
+
+.slide-button-m {
+    padding-bottom: 50px;
+    max-width: 300px;
+    width: 80%;
+    height: auto;
+}

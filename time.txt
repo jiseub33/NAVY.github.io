@@ -1,0 +1,19 @@
+// Set the date and time for the element to be removed
+var removalDate = new Date("2023-03-01T15:00:00"); // March 1, 2023 at 3:00 PM
+
+// Check the current date and time every second
+var intervalId = setInterval(function() {
+  var currentDate = new Date();
+  
+  // Compare the current date and time to the removal date and time
+  if (currentDate >= removalDate) {
+    // Remove the element
+    var element = document.getElementById("my-element");
+    element.parentNode.removeChild(element);
+    
+    // Clear the interval so that it stops running
+    clearInterval(intervalId);
+  }
+}, 1000); // 1000 milliseconds = 1 second
+
+// 정해진시간에 쿠폰자동삭제 기능 made by chatGPT
