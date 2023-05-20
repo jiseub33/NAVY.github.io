@@ -275,7 +275,7 @@ ul.canvas > li:nth-child(3) div img {
 }
 
 ul.canvas > li:nth-child(3) div h1 {
-    margin: 20px;
+    margin: 20px 0 0;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -284,7 +284,14 @@ ul.canvas > li:nth-child(3) div h1 {
 ul.canvas > li:nth-child(3) div h2 {
     text-align: center;
     font-size: 15px;
-    font-weight: 500
+    font-weight: 700
+}
+
+ul.canvas > li:nth-child(3) div p {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 300;
 }
 
 ul.canvas > li:nth-child(4) div {
@@ -319,6 +326,11 @@ ul.canvas > li:nth-child(4) div p {
     font-size: 15px;
     font-weight: 500;
     text-align: center;
+}
+
+ul.canvas > li:nth-child(4) div p.info {
+    font-size: 10px;
+    color: #ff0000;
 }
 
 ul.canvas > li:nth-child(4) div b {
