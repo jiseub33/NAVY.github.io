@@ -86,7 +86,7 @@ ul.canvas > li::-webkit-scrollbar {
     display: none;
 }
 
-ul.canvas > li h1, h2 {
+ul.canvas > li h1, h2, p {
     font-family: 'Noto Sans KR', sans-serif;
 
 }
