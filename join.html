@@ -8,6 +8,7 @@
      <title>NAVY ALLIANCE</title>
      <link rel="stylesheet" href="join/join.css">
      <script src="fullpage.js" defer></script>
+     <script src="join/device.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +16,18 @@
         <p>전체화면으로 보세욤!</p>
         <button onclick="toggleFullScreen()"></button>
     </div>
-    <ul class="canvas">
+    <div class="pc" id="pc">
+        <div>
+            <div>
+                <img src="join/link.svg" alt="QR코드">
+                <h1>
+                    모바일 환경에 최적화된 콘텐츠에요!
+                    <br>아래 QR코드를 통해 접속해주세요!
+                </h1>
+            </div>
+        </div>
+    </div>
+    <ul class="canvas" id="mobile">
         <li id="home">
             <h1>EON에 오신것을<br>환영해요!</h1>
             <h2>스크롤 하여 계속하세요 ></h2>
