@@ -11,60 +11,186 @@
 </head>
 
 <body>
-    <button onclick="toggleFullScreen()"><img src="join/fullscreen-fill.svg" alt=""></button>
+    <div class="fullscreen" id="fullscreenButton" >
+        <p>전체화면으로 보세욤!</p>
+        <button onclick="toggleFullScreen()"></button>
+    </div>
     <ul class="canvas">
         <li id="home">
             <h1>EON에 오신것을<br>환영해요!</h1>
             <h2>스크롤 하여 계속하세요 ></h2>
         </li>
         <li>
-            <h1>
-                안녕하세요! 라이츄에요!
-                <br>이곳에서 우리의 대해 더욱 더 자세히 알아가봐요!!
-                <br>궁금하신 사항이나 오류가 있다면,
-                <br>아래 카카오톡의 라이츄로 연락주세요!!
-                <br>
-                <br>오른쪽 위의 전체화면 보기로 크게보면
-                <br>더욱 더 보기 편해욤 :)
-                <br>그럼 즐거운 EON투어 되세용!
-            </h1>
             <ul>
                 <li>
-                    <a href="#home">
+                    <a href="#info">
                         <img src="join/LOGO_EON.png" alt="">
                         <h1>기본정보</h1>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#level">
                         <img src="join/level.png" alt="">
-                        <h1>자격요건</h1>
+                        <h1>자격&모집요강</h1>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#asg">
                         <img class="asg" src="join/asg.png" alt="">
                         <h1>전단</h1>
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="#blitz">
                         <img class="blitz" src="join/blitz.png" alt="">
                         <h1>기방</h1>
                     </a>
                 </li>
                 <li>
-                    <a class="arrow" href="">
-                        <h1>모집요강</h1>
-                    </a>
-                </li>
-                <li>
-                    <a class="arrow" href="">
+                    <a href="#join">
                         <h1>신청하기</h1>
                     </a>
                 </li>
             </ul>
-            <h2>스크롤 하여 계속하세요 ></h2>
+        </li>
+        <li id="info">
+            <div>
+                <img src="join/LOGO_EON_small.png" alt="">
+                <h1>기본정보</h2>
+                <h2>연합명 : Empire of Navy</h2>
+                <h2>연합장 : 아낌없이주는나무</h2>
+                <h2>연합인원 : 25명 (부캐포함)</h2>
+                <h1>EON만의 특별한점!</h1>
+                <h2>EON의 오랜 역사와 함께 해오신
+                    <br>여러 간부 및 연합원분들이
+                    <br>체계적으로 운영을 하고 있습니다!
+                    <br>업데이트나 긴급점검 등 어떠한 상황에도
+                    <br>바로바로 일정을 조정하고
+                    <br>연합원들의 의견을 수용하며
+                    <br>연합원 모두가!
+                    <br>만족할 수 있도록 노력하고 있습니다 :)
+                    <br>
+                    <br>EON같은 연합 찾기 힘드실껄요~~~?
+                </h2>
+            </div>
+        </li>
+        <li id="level">
+            <div>
+                <h1>이번모집에서는,
+                    <br>이런분을 모집해요!
+                </h1>
+                <img src="join/user-smile-line.svg" alt="">
+                <h2>인성이 착하신분!</h2>
+                <p>
+                    <b>그 어떠한 상황에서도 <br>상대방의 비방과 욕설은 용납되지 않습니다.</b>
+                </p>
+                <img src="join/numbers-fill.svg" alt="">
+                <h2>전투력</h2>
+                <p>최소 100억 이상</p>
+                <img src="join/team-fill.svg" alt="">
+                <h2>모집인원</h2>
+                <p>5명</p>
+            </div>
+        </li>
+        <li id="asg">
+            <div>
+                <img src="join/asg.png" alt="">
+                <h1>전단</h1>
+                <h2>시간</h2>
+                <p>AM 04:00
+                   <br>AM 08:00
+                   <br>PM 12:00 
+                   <br>PM 04:00
+                   <br>PM 08:00
+                   <br>AM 12:00 
+                </p>
+                <h2>레벨</h2>
+                <p>
+                    모든요일 모든시간에 66전단을 소환합니다.
+                    <br>새벽 4시는 상황에 다릅니다.
+                </p>
+            </div>
+        </li>
+        <li id="blitz">
+            <div>
+                <img src="join/blitz.png" alt="">
+                <h1>기방</h1>
+                <table>
+                    <caption>
+                        기방시간
+                        <div>기방시간입니다.</div>
+                    </caption>
+                    <colgroup>
+                        <col style="width:25%">
+                        <col style="width:25%">
+                        <col style="width:25%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <td>요일</td>
+                            <td>시간</td>
+                            <td>레벨</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>월요일</td>
+                            <td>21:00</td>
+                            <td>Lv.60</td>
+                        </tr>
+                        <tr>
+                            <td>화요일</td>
+                            <td>21:15</td>
+                            <td>Lv.60</td>
+                        </tr>
+                        <tr>
+                            <td>화요일[침공]</td>
+                            <td>21:00</td>
+                            <td>Lv.60</td>
+                        </tr>
+                        <tr>
+                            <td>수요일</td>
+                            <td>21:15</td>
+                            <td>Lv.60</td>
+                        </tr>
+                        <tr>
+                            <td>목요일</td>
+                            <td>21:00</td>
+                            <td>Lv.60</td>
+                        </tr>
+                        <tr>
+                            <td>금요일</td>
+                            <td>23:00</td>
+                            <td>Lv.50</td>
+                        </tr>
+                        <tr>
+                            <td>토요일</td>
+                            <td>23:00</td>
+                            <td>Lv.60</td>
+                        </tr>
+                        <tr>
+                            <td>일요일</td>
+                            <td>23:00</td>
+                            <td>Lv.60</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>last update 20230520</p>
+            </div>
+        </li>
+        <li id="join">
+            <div>
+                <h1>신청하기</h1>
+                <p>EON과 함께하실 준비 되셨나요?(찡긋)
+                    <br>궁금하신 사항은 언제든지 연락주세요!
+                    <br>기다리고 있겠습니당 :)
+                </p>
+                <div class="link">
+                    <a href="https://open.kakao.com/o/sezdWJBd">합장님께 연락하기</a>
+                    <a href="https://open.kakao.com/o/sIS61Gwb">라이츄에게 연락하기</a>
+                    <a class="home" href="#home">처음으로 돌아가기</a>
+                </div>
+            </div>
         </li>
     </ul>
 </body>
