@@ -58,13 +58,13 @@ fetch(tsvUrl)
                     }
                 }
                 js1Finished();
-
                 function js1Finished() {
                     // Now include js2.js dynamically after js1 has finished
                     var script = document.createElement('script');
                     script.src = 'js/time.js';
                     document.head.appendChild(script);
                 }
+                ulElement.style.display = "block";
             })
             .catch(error => console.error('Error fetching second TSV:', error));
     })

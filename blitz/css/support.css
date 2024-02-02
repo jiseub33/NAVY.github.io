@@ -2,8 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
 body {
+    max-width: 500px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Noto Sans KR', sans-serif;
     background: rgb(248, 248, 248);
     line-height: 1;
@@ -78,6 +79,7 @@ body > div.title {
 }
 
 .support {
+    display: none;
     position: relative;
     width: 90%;
     padding: 10px;
