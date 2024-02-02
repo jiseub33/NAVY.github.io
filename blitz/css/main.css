@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: rgb(248, 248, 248);
+    line-height: 1;
+}
+
+body > div.title {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+
+    text-align: left;
+    padding: 20px 0;
+}
+
+.title .maintitle {
+    position: relative;
+    margin: 80px 0 0 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.title .maintitle h1 {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    transform: translateY(-2px);
+}
+
+.title p.subtitle {
+    margin: 0;
+    padding: 15px 0 0 15px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.notice {
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: url("../images/icons/arrow-right-s-line.svg") no-repeat right 15px center, #fff;
+    color: #141414;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.add-button {
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background: url("../images/icons/arrow-right-s-line.svg") no-repeat right 15px center, #fff;
+    color: #141414;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.member {
+    position: relative;
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.member div {
+    margin:20px 0 20px 0;
+    box-sizing: border-box;
+}
+
+.member div a {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0 0 10px 0;
+    width: 100%;
+    background: #fff;;
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 60px;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 60px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.member a:nth-last-child(1) {
+    margin: 0;
+}
