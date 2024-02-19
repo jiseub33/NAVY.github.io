@@ -220,7 +220,7 @@ body > div.title {
     bottom: 0;
     padding: 0 0 0 20px;
     margin: 0;
-    background: url(../images/icon/arrow-up-down-line.svg) no-repeat left center / 15px;
+    background: url(../images/icons/arrow-up-down-line.svg) no-repeat left center / 15px;
     font-size: 12.5px;
     font-weight: 700;
     transform: translate(-50%,50%);
@@ -228,5 +228,5 @@ body > div.title {
 
 .support  li div:nth-child(3) p.danger {
     color: #ff0000;
-    background: url(../images/icon/arrow-up-down-line-red.svg) no-repeat left center / 15px;
+    background: url(../images/icons/arrow-up-down-line-red.svg) no-repeat left center / 15px;
 }
