@@ -60,7 +60,7 @@ body > div.title {
 }
 
 .add-button {
-    display: block;
+    display: none;
     padding: 15px;
     margin: 20px auto;
     width: 90%;
