@@ -41,7 +41,7 @@
       "src": "https://navy.jisby.com/blitz/images/logo/logo_1024x1024_mask.png",
       "type": "image/png",
       "sizes": "1024x1024",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
       "src": "https://navy.jisby.com/blitz/images/logo/logo_1024x1024.png",
