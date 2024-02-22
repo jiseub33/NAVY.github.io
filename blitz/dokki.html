@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="manifest" href="https://navy.jisby.com/blitz/json/dokki.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>70기방플랜 | 도끼</title>
     <link rel="stylesheet" href="css/support.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="js/crawling.js"></script>
+    <script defer src="js/install.js"></script>
     <script>
       var selectedRows = [21, 22];
     </script>
+    <script type="module">
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+      const el = document.createElement('pwa-update');
+      document.body.appendChild(el);
+   </script>
 </head>
 <body>
     <div class="title">
@@ -19,5 +25,6 @@
         <p class="subtitle"></p>
     </div>
   <ul class="support" id="support-list"></ul>
+  <button class="add-button">설치하기</button>
 </body>
 </html>

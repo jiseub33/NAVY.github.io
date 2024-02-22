@@ -1,0 +1,70 @@
+{
+  "background_color": "#ffffff",
+  "description": "EON 70 Blitz",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "EON 70기방",
+  "orientation": "any",
+  "scope": "https://navy.jisby.com/blitz/kkalijaeng-i",
+  "short_name": "EON 70기방",
+  "start_url": "https://navy.jisby.com/blitz/kkalijaeng-i",
+  "theme_color": "#f8f8f8",
+  "categories": [
+    "games"
+  ],
+  "icons": [
+    {
+      "src": "https://navy.jisby.com/blitz/images/logo/logo_128x128.png",
+      "type": "image/png",
+      "sizes": "128x128",
+      "purpose": "any"
+    },
+    {
+      "src": "https://navy.jisby.com/blitz/images/logo/logo_256x256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any"
+    },
+    {
+      "src": "https://navy.jisby.com/blitz/images/logo/logo_384x384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any"
+    },
+    {
+      "src": "https://navy.jisby.com/blitz/images/logo/logo_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://navy.jisby.com/blitz/images/logo/logo_1024x1024_mask.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any"
+    },
+    {
+      "src": "https://navy.jisby.com/blitz/images/logo/logo_1024x1024.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "any"
+    }
+  ],
+  "screenshots" : [
+    {
+      "src": "",
+      "sizes": "1080x2273",
+      "type": "image/jpg",
+      "platform": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "EON 70기방",
+      "url": "https://navy.jisby.com/blitz/kkalijaeng-i",
+      "description": "EON 70 Blitz"
+    }
+  ],
+  "prefer_related_applications": false,
+  "lang": "ko"
+}
