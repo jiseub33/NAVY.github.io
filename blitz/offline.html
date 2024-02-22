@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70기방플랜 | 나무</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgba(1,113,242,1)"><path d="M2.80815 1.39343L20.4858 19.0711L19.0716 20.4853L15.3889 16.8024L12.0005 21L0.689941 6.99674C1.60407 6.25747 2.59204 5.60589 3.64107 5.05479L1.39394 2.80765L2.80815 1.39343ZM12.0005 3.00003C16.2849 3.00003 20.2196 4.49687 23.3104 6.99611L17.9039 13.689L7.72504 3.51088C9.09547 3.17702 10.5273 3.00003 12.0005 3.00003Z"></path></svg>
+        <div class="maintitle">
+            <h1>인터넷이 연결되어있지 않습니다.</h1>
+        </div>
+        <p class="subtitle">네트워크를 확인해주세요</p>
+    </div>
+</body>
+<style>
+    body {
+        max-width: 500px;
+        padding: 0;
+        margin: 0 auto;
+        font-family: 'Noto Sans KR', sans-serif;
+        background: rgb(248, 248, 248);
+        line-height: 1;
+    }
+
+    body > div.title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 300px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+        transform: translate(-50%,-50%);
+    }
+
+    .title svg {
+        width: 50%;
+    }
+
+    .title .maintitle {
+        position: relative;
+        margin: 40px 0 0 0;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    .title .maintitle h1 {
+        margin: 0;
+        font-size: 25px;
+        font-weight: 800;
+        transform: translateY(-2px);
+    }
+
+    .title p.subtitle {
+        margin: 0;
+        padding: 15px 0 0 0;
+        font-size: 15px;
+        font-weight: 800;
+    }
+</style>
+</html>
