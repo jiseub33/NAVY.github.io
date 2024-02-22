@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+body {
+    max-width: 500px;
+    padding: 0;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: rgb(248, 248, 248);
+    line-height: 1;
+}
+
+body > div.title {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+
+    text-align: left;
+    padding: 20px 0;
+}
+
+.title .maintitle {
+    position: relative;
+    margin: 80px 0 0 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.title .maintitle h1 {
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    transform: translateY(-2px);
+}
+
+.title p.subtitle {
+    margin: 0;
+    padding: 15px 0 0 15px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.notice {
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: url("../images/icons/arrow-right-s-line.svg") no-repeat right 15px center, #fff;
+    color: #141414;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.add-button {
+    display: block;
+    padding: 15px;
+    margin: 20px auto;
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    background: url("../images/icons/arrow-right-s-line.svg") no-repeat right 15px center, #fff;
+    color: #141414;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.support {
+    overflow: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 90%;
+    height: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.support li {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+
+
+.support li div:nth-child(1) {
+    padding: 0 0 10px 0;
+    margin: 0 0 10px 0;
+    text-align: right;
+}
+
+.support li:last-child div:nth-child(1) {
+    padding: 0;
+    margin: 0;
+}
+
+.support li div:nth-child(1) p {
+    margin: 0;
+    color: #6f7b88;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.support li div:nth-child(2) {
+    display: block;
+    position: relative;
+    margin: 0 15px;
+    width: 2.5px;
+    box-sizing: border-box;
+    background: #0171f2;
+}
+
+.support li:first-child div:nth-child(2) {
+    margin-top: 10px;
+}
+
+.support li:first-child div:nth-child(2):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #0171f2;
+    transform: translate(-50%, -50%);
+}
+
+.support li div:nth-child(2):after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #0171f2;
+    transform: translate(-50%, 50%);
+}
+
+.support li:last-child div:nth-child(2) {
+    height: 10px;
+}
+
+.support li:last-child div:nth-child(2):after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #0171f2;
+    transform: translate(-50%, 50%);
+}
+
+.support li div:nth-child(3) {
+    position: relative;
+    flex-grow: 2;
+    padding: 0 0 20px 0;
+    margin: 0 0 20px 0;
+    box-sizing: border-box;
+    color: #141414;
+    font-weight: 700;
+}
+
+.support li:not(:last-child) div:nth-child(3):before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    height: 1px;
+    background: #0171f2;
+}
+
+.support li:not(:last-child) div:nth-child(3):after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35%;
+    height: 1px;
+    background: #0171f2;
+}
+
+.support  li div:nth-child(3) h1 {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.support  li div:nth-child(3) h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.support  li div:nth-child(3) p {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    padding: 0 0 0 20px;
+    margin: 0;
+    background: url(../images/icons/arrow-up-down-line.svg) no-repeat left center / 15px;
+    font-size: 12.5px;
+    font-weight: 700;
+    transform: translate(-50%,50%);
+}
+
+.support  li div:nth-child(3) p.danger {
+    color: #ff0000;
+    background: url(../images/icons/arrow-up-down-line-red.svg) no-repeat left center / 15px;
+}
