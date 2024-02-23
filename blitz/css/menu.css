@@ -41,7 +41,7 @@ body > div:not(.menu){
     font-weight: 800;
 }
 
-@media (max-height: 150px) {
+@media (max-height: 250px) {
     .menu {
         transform: translateY(100%);
     }

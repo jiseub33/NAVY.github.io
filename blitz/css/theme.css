@@ -37,6 +37,12 @@
         background-image: url(../images/icons/arrow-up-down-line-white.svg);
     }
 
+    /* HISTORY */
+    .history li {
+        background: #1f1f1f;
+        color: #fff;
+    }
+
     /* 메뉴 */
 
     .menu {
