@@ -1,5 +1,5 @@
 body > div:not(.menu){
-    margin: 0 0 70px 0;
+    margin: 0 0 90px 0;
 }
 
 .menu {
@@ -11,6 +11,7 @@ body > div:not(.menu){
     border-radius: 25px 25px 0 0;
     background:#fff;
     font-family: 'Noto Sans KR', sans-serif;
+    transition: .5s all;
 }
 
 .menu button {
@@ -38,4 +39,10 @@ body > div:not(.menu){
     margin: 0;
     font-size: 15px;
     font-weight: 800;
+}
+
+@media (max-height: 150px) {
+    .menu {
+        transform: translateY(100%);
+    }
 }

@@ -7,7 +7,9 @@
     <title>70기방플랜 | 츄</title>
     <link rel="stylesheet" href="css/support.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/theme.css">
     <script src="js/crawling.js"></script>
+    <script defer src="js/history.js"></script>
     <script defer src="js/menu.js"></script>
     <script defer src="js/install.js"></script>
     <script>
@@ -31,11 +33,25 @@
             <ul class="support" id="support-list"></ul>
             <button class="add-button">설치하기</button>
         </div>
-        <div class="defense">
+        <div class="menu-defense">
+            <div class="title">
+                <div class="maintitle">
+                    <h1>전체 수비표</h1>
+                </div>
+                <p class="subtitle"></p>
+            </div>
         </div>
-        <div class="history">
+        <div class="menu-history">
+            <div class="title">
+                <div class="maintitle">
+                    <h1>기방 히스토리</h1>
+                </div>
+                <p class="subtitle"></p>
+            </div>
+            <ul class="history">
+            </ul>
         </div>
-        <div class="coupon">
+        <div class="menu-coupon">
             <iframe src="https://gbtwcoupon.jisby.com/" id="coupon" frameborder="0"></iframe>
         </div>
     </div>
@@ -44,15 +60,15 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20Z"></path></svg>
             <p>홈</p>
         </button>
-        <button class="defense">
+        <button class="menu-defense">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598Z"></path></svg>
             <p>수비표</p>
         </button>
-        <button class="history">
+        <button class="menu-history">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12H4C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.25022 4 6.82447 5.38734 5.38451 7.50024L8 7.5V9.5H2V3.5H4L3.99989 5.99918C5.82434 3.57075 8.72873 2 12 2ZM13 7L12.9998 11.585L16.2426 14.8284L14.8284 16.2426L10.9998 12.413L11 7H13Z"></path></svg>
             <p>기록</p>
         </button>
-        <button class="coupon">
+        <button class="menu-coupon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.0049 2.99966C21.5572 2.99966 22.0049 3.44738 22.0049 3.99966V9.49966C20.6242 9.49966 19.5049 10.619 19.5049 11.9997C19.5049 13.3804 20.6242 14.4997 22.0049 14.4997V19.9997C22.0049 20.5519 21.5572 20.9997 21.0049 20.9997H3.00488C2.4526 20.9997 2.00488 20.5519 2.00488 19.9997V14.4997C3.38559 14.4997 4.50488 13.3804 4.50488 11.9997C4.50488 10.619 3.38559 9.49966 2.00488 9.49966V3.99966C2.00488 3.44738 2.4526 2.99966 3.00488 2.99966H21.0049Z"></path></svg>
             <p>쿠폰</p>
         </button>

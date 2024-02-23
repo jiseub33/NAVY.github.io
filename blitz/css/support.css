@@ -88,6 +88,8 @@ body div.title {
     text-decoration: none;
 }
 
+/* 홈 */
+
 .support {
     display: none;
     position: relative;
@@ -106,7 +108,6 @@ body div.title {
     font-family: 'Noto Sans KR', sans-serif;
     list-style: none;
 }
-
 
 .support li div:nth-child(1) {
     padding: 0 0 10px 0;
@@ -241,13 +242,51 @@ body div.title {
     background: url(../images/icons/arrow-up-down-line-red.svg) no-repeat left center / 15px;
 }
 
+/* 히스토리 */
+
+.history {
+    display: block;
+    position: relative;
+    padding: 0;
+    width: 90%;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.history li {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+
+.history li h1,
+.history li h2,
+.history li span {
+    margin: 0;
+    font-size: 25px;
+}
+
+.history li h1 {
+    flex: 1;
+}
+
+.history li h2 {
+    padding: 0 10px;
+}
+
 /* 쿠폰 */
 
-.coupon iframe {
+.menu-coupon iframe {
     width: 100%;
     height: calc(100vh - 70px);
 }
 
-.coupon iframe::-webkit-scrollbar {
+.menu-coupon iframe::-webkit-scrollbar {
     display: none;
 }
