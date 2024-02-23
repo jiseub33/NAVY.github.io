@@ -1,0 +1,40 @@
+body > div:not(.menu){
+    margin: 0 0 90px 0;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+    background:#fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.menu button {
+    flex: 1;
+    padding: 10px;
+    border: 0;
+    background: none;
+    box-sizing: border-box;
+}
+
+.menu button.active {
+    color: #0171f2;
+}
+
+
+.menu button svg {
+    width: 25px;
+}
+
+.menu button img {
+    width: 50px;
+}
+
+.menu button p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 800;
+}

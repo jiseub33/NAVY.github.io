@@ -10,7 +10,17 @@ body {
     line-height: 1;
 }
 
-body > div.title {
+.content > div {
+    display: none;
+}
+
+.content > div.active {
+    display: block;
+}
+
+/* 홈 */
+
+body div.title {
     width: 90%;
     height: 300px;
     margin: 0 auto;
@@ -229,4 +239,10 @@ body > div.title {
 .support  li div:nth-child(3) p.danger {
     color: #ff0000;
     background: url(../images/icons/arrow-up-down-line-red.svg) no-repeat left center / 15px;
+}
+
+/* 쿠폰 */
+
+.coupon iframe {
+    width: 100%;
 }

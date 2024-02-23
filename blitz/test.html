@@ -1,150 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <link rel="manifest" href="https://navy.jisby.com/blitz/json/chuu.json" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spreadsheet Data</title>
-    <link rel="stylesheet" href="css/test.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title>70기방플랜 | 츄</title>
+    <link rel="stylesheet" href="css/support.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="js/crawling.js"></script>
+    <script defer src="js/menu.js"></script>
+    <script defer src="js/install.js"></script>
     <script>
-        var selectedRows = [11, 12];
+      var selectedRows = [19, 20];
     </script>
+    <script type="module">
+      import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+      const el = document.createElement('pwa-update');
+      document.body.appendChild(el);
+   </script>
 </head>
-
 <body>
-    <div class="title" style="display: none;">
-        <div class="maintitle">
-            <h1>나무지원표</h1>
+    <div class="content">
+        <div class="menu-support active">
+            <div class="title">
+                <div class="maintitle">
+                    <h1>츄지원표</h1>
+                </div>
+                <p class="subtitle"></p>
+            </div>
+            <ul class="support" id="support-list"></ul>
+            <button class="add-button">설치하기</button>
         </div>
-        <p class="subtitle"></p>
+        <div class="defense">
+        </div>
+        <div class="history">
+        </div>
+        <div class="coupon">
+            <iframe src="https://gbtwcoupon.jisby.com/" id="coupon" frameborder="0"></iframe>
+        </div>
     </div>
-    <ul class="support" id="support-list">
-        <li>
-            <div>
-                <p id="time">00:00</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">평강</h1>
-                <h2 id="military_power">본진1</h2>
-                <p id="time_difference">26:07</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">26:07</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">할리마오</h1>
-                <h2 id="military_power">본진1</h2>
-                <p id="time_difference">12:52</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">38:59</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">제너두</h1>
-                <h2 id="military_power">본진1</h2>
-                <p id="time_difference">29:54</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">68:53</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">라이온</h1>
-                <h2 id="military_power">항모2</h2>
-                <p id="time_difference" class="danger">01:15</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">70:08</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">나무</h1>
-                <h2 id="military_power"></h2>
-                <p id="time_difference">11:48</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">81:56</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">도끼</h1>
-                <h2 id="military_power">본진1</h2>
-                <p id="time_difference" class="danger">01:31</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">83:27</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">다온다올</h1>
-                <h2 id="military_power">항모1</h2>
-                <p id="time_difference">06:36</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">90:03</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">까리쟁이</h1>
-                <h2 id="military_power">본진1</h2>
-                <p id="time_difference" class="danger">02:01</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">92:04</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">밸리곰</h1>
-                <h2 id="military_power">항모2</h2>
-                <p id="time_difference">03:10</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">95:14</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">하양아잉</h1>
-                <h2 id="military_power">항모1</h2>
-                <p id="time_difference">04:06</p>
-            </div>
-        </li>
-        <li>
-            <div>
-                <p id="time">99:20</p>
-            </div>
-            <div></div>
-            <div>
-                <h1 id="goal">언더워터</h1>
-                <h2 id="military_power">본진1</h2>
-                <p id="time_difference"></p>
-            </div>
-        </li>
-    </ul>
-    <script>
-
+    <div class="menu">
+        <button class="menu-support active">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V9.48907C3 9.18048 3.14247 8.88917 3.38606 8.69972L11.3861 2.47749C11.7472 2.19663 12.2528 2.19663 12.6139 2.47749L20.6139 8.69972C20.8575 8.88917 21 9.18048 21 9.48907V20Z"></path></svg>
+            <p>홈</p>
+        </button>
+        <button class="defense">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3.78307 2.82598L12 1L20.2169 2.82598C20.6745 2.92766 21 3.33347 21 3.80217V13.7889C21 15.795 19.9974 17.6684 18.3282 18.7812L12 23L5.6718 18.7812C4.00261 17.6684 3 15.795 3 13.7889V3.80217C3 3.33347 3.32553 2.92766 3.78307 2.82598Z"></path></svg>
+            <p>수비표</p>
+        </button>
+        <button class="history">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12H4C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C9.25022 4 6.82447 5.38734 5.38451 7.50024L8 7.5V9.5H2V3.5H4L3.99989 5.99918C5.82434 3.57075 8.72873 2 12 2ZM13 7L12.9998 11.585L16.2426 14.8284L14.8284 16.2426L10.9998 12.413L11 7H13Z"></path></svg>
+            <p>기록</p>
+        </button>
+        <button class="coupon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.0049 2.99966C21.5572 2.99966 22.0049 3.44738 22.0049 3.99966V9.49966C20.6242 9.49966 19.5049 10.619 19.5049 11.9997C19.5049 13.3804 20.6242 14.4997 22.0049 14.4997V19.9997C22.0049 20.5519 21.5572 20.9997 21.0049 20.9997H3.00488C2.4526 20.9997 2.00488 20.5519 2.00488 19.9997V14.4997C3.38559 14.4997 4.50488 13.3804 4.50488 11.9997C4.50488 10.619 3.38559 9.49966 2.00488 9.49966V3.99966C2.00488 3.44738 2.4526 2.99966 3.00488 2.99966H21.0049Z"></path></svg>
+            <p>쿠폰</p>
+        </button>
+    </div>
+    <script type="text/javascript">
+        let iframe = document.getElementById('coupon');
+        
+        iframe.addEventListener('load', function() {
+            iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+        });
     </script>
 </body>
-
 </html>
