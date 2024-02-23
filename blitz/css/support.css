@@ -245,4 +245,9 @@ body div.title {
 
 .coupon iframe {
     width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.coupon iframe::-webkit-scrollbar {
+    display: none;
 }

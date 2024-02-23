@@ -1,5 +1,5 @@
 body > div:not(.menu){
-    margin: 0 0 90px 0;
+    margin: 0 0 70px 0;
 }
 
 .menu {
@@ -7,6 +7,7 @@ body > div:not(.menu){
     position: fixed;
     bottom: 0;
     width: 100%;
+    max-width: 500px;
     border-radius: 25px 25px 0 0;
     background:#fff;
     font-family: 'Noto Sans KR', sans-serif;

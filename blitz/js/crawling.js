@@ -34,8 +34,6 @@ fetch(tsvUrl)
                         var currentValue = selectedColumns[0][i];
                         var matchingRow = columns2.find(row => row[1].trim() === currentValue.trim());
 
-                        console.log(columns2)
-                        console.log(currentValue)
                         if (matchingRow) {
                             // Found a match, set the values in the HTML elements
                             var timeValue = matchingRow[0];
@@ -50,7 +48,6 @@ fetch(tsvUrl)
                                     <p id="time_difference"></p>
                                 </div>
                             </li>`;
-                            console.log('---------------------------')
                             // Update the content of the existing <ul> element
                             var ulElement = document.getElementById('support-list');
                             ulElement.innerHTML += htmlElement;
