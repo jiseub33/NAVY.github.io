@@ -42,6 +42,11 @@
     margin: 0;
     height: 4px;
     border-radius: 4px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.slider .paging .swiper-pagination-bullet-active {
+    background: #007aff;
 }
 
 .slider > button {
@@ -183,7 +188,7 @@
 
 /* 1페이지 */
 .swiper-slide:nth-child(1) {
-    background: url(../image/bg1.jpg) no-repeat center / cover;
+    background: url(../image/bg0.gif) no-repeat 50% 50% / cover;
 }
 
 .swiper-slide:nth-child(1) .txt {
@@ -225,7 +230,8 @@
 
 /* 2페이지 */
 .swiper-slide:nth-child(2) {
-    background: #EBD3B5;
+    background: url(../image/bg1.webp) no-repeat 50% 50% / cover;
+    color: #fff;
 }
 
 /* 3페이지 */
@@ -251,7 +257,7 @@
 }
 
 .swiper-slide:nth-child(3) h1 {
-    padding: 70vh 0 0 0;
+    padding: 60vh 0 0 0;
     font-size: 35px;
     font-weight: 900;
 }
@@ -394,7 +400,7 @@
     text-align: left;
 }
 
-.swiper-slide:nth-child(5) .txt2 .particular h3 {
+.swiper-slide:nth-child(5) .txt2 .particular > h3 {
     padding: 0 0 0 20px;
 }
 
@@ -421,11 +427,11 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.swiper-slide:nth-child(5) .txt2 .particular:nth-child(2) > div img {
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(1) > div img {
     width: 20%;
 }
 
-.swiper-slide:nth-child(5) .txt2 .particular:nth-child(2) > div > div {
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(1) > div > div {
     margin: 0 0 0 20px;
 }
 
@@ -469,7 +475,8 @@
 
 /* 6페이지 */
 .swiper-slide:nth-child(6) {
-    background: #F2ACC6;
+    background: url(../image/bg5.gif) no-repeat 50% 50% / cover;
+    color: #fff;
 }
 
 .swiper-slide:nth-child(6) a {
