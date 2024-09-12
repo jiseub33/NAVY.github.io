@@ -303,6 +303,11 @@
     margin: 0 0 0 20px;
 }
 
+.swiper-slide:nth-child(3) .txt2 .particular:nth-child(3) div p {
+    padding: 10px 0 0 0;
+}
+
+
 .swiper-slide-active:nth-child(3) .txt {
     animation: txt-out .5s 5s ease-out forwards;
 }
@@ -435,6 +440,10 @@
     margin: 0 0 0 20px;
 }
 
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(2) div p {
+    padding: 10px 0 0 0;
+}
+
 .swiper-slide:nth-child(5) .txt2 .particular:nth-child(3) > div {
     padding: 20px;
     margin: 10px auto;
@@ -446,27 +455,8 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div {
-    padding: 20px;
-    margin: 10px auto;
-    width: 90%;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    box-sizing: border-box;
-    backdrop-filter: blur(10px) brightness(1.5);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div img {
-    width: 20%;
-}
-
-.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div > div h3 {
-    padding: 0 0 5px 0;
-}
-
-.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div > div p {
-    padding: 0 0 5px 0;
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(3) div p {
+    padding: 10px 0 0 0;
 }
 
 .swiper-slide-active:nth-child(5) .txt {
