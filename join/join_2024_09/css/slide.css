@@ -183,7 +183,7 @@
 
 /* 1페이지 */
 .swiper-slide:nth-child(1) {
-    background: url(../image/page1.jpg) no-repeat center / cover;
+    background: url(../image/bg1.jpg) no-repeat center / cover;
 }
 
 .swiper-slide:nth-child(1) .txt {
@@ -230,8 +230,14 @@
 
 /* 3페이지 */
 .swiper-slide:nth-child(3) {
-    background: url(../image/page2.jpg) no-repeat 50% 50% / cover;
+    background: url(../image/bg2.jpg) no-repeat 50% 50% / cover;
     color: #fff;
+}
+
+.swiper-slide:nth-child(3) .filter {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2px);
 }
 
 .swiper-slide:nth-child(3) .txt2 {
@@ -248,12 +254,6 @@
     padding: 70vh 0 0 0;
     font-size: 35px;
     font-weight: 900;
-}
-
-.swiper-slide:nth-child(3) .filter {
-    width: 100%;
-    height: 100vh;
-    backdrop-filter: blur(2px);
 }
 
 .swiper-slide:nth-child(3) .txt2 .particular {
@@ -297,23 +297,20 @@
     margin: 0 0 0 20px;
 }
 
-.swiper-slide:nth-child(3) .txt2 .particular > div > div h4{
-    display: flex;
-    border-radius: 20px;
-}
-
-.swiper-slide:nth-child(3) .txt2 .particular > div > div p{
-    display: flex;
-    border-radius: 20px;
-}
-
 .swiper-slide-active:nth-child(3) .txt {
     animation: txt-out .5s 5s ease-out forwards;
 }
 
 /* 4페이지 */
 .swiper-slide:nth-child(4) {
-    background: #DAC8F7;
+    background: url(../image/bg3.jpg) no-repeat 50% 50% / cover;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(4) .filter {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(2px);
 }
 
 .swiper-slide:nth-child(4) .txt2,
@@ -326,13 +323,53 @@
     text-align: center;
 }
 
+.swiper-slide:nth-child(4) .txt2 .particular {
+    text-align: left;
+}
+
+.swiper-slide:nth-child(4) .txt2 .particular:nth-child(2) > div {
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(4) .txt2 .particular:nth-child(3) > div {
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(4) .txt2 .particular > div img {
+    width: 20%;
+}
+
+.swiper-slide:nth-child(4) .txt2 .particular > div > div h3 {
+    padding: 0 0 5px 0;
+}
+
+.swiper-slide:nth-child(4) .txt2 .particular > div > div p {
+    padding: 0 0 5px 0;
+}
+
 .swiper-slide-active:nth-child(4) .txt {
     animation: txt-out .5s 5s ease-out forwards;
 }
 
+
 /* 5페이지 */
 .swiper-slide:nth-child(5) {
-    background: #F2D5DD;
+    background: url(../image/bg4.jfif) no-repeat 70% 50% / cover;
+    color: #fff;
 }
 
 .swiper-slide:nth-child(5) .txt2 {
@@ -351,6 +388,79 @@
 
 .swiper-slide:nth-child(5) .txt2 div > * {
     opacity: 1;
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular {
+    text-align: left;
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular h3 {
+    padding: 0 0 0 20px;
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(1) > div {
+    display: flex;
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(2) > div {
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(2) > div img {
+    width: 20%;
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(2) > div > div {
+    margin: 0 0 0 20px;
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(3) > div {
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div {
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div img {
+    width: 20%;
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div > div h3 {
+    padding: 0 0 5px 0;
+}
+
+.swiper-slide:nth-child(5) .txt2 .particular:nth-child(4) > div > div p {
+    padding: 0 0 5px 0;
 }
 
 .swiper-slide-active:nth-child(5) .txt {
