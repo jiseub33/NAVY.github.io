@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+* {margin: 0; padding: 0}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.fullscreen {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+div.fullscreen p {
+    display: inline-block;
+    line-height: 30px;
+    font-weight: 900;
+    vertical-align: top;
+}
+
+div.active p {
+    display: none;
+}
+
+div.fullscreen a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: url(../join/fullscreen-fill.svg) no-repeat;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+
+}
+
+div.active a {
+    background: url(../join/fullscreen-exit-line.svg) no-repeat;
+}
+
+button img {
+    width: 100%;
+    height: 100%;
+}
+
+.pc {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #ADCDFF;
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.pc > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 15px;
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    background-size: 100px;
+    border-radius: 15px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.pc > div > div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70%;
+    border-radius: 15px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.pc > div > div img {
+    width: 100%;
+}
+
+.pc > div > div h1 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+ul.canvas {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory !important;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    white-space: nowrap;
+    list-style: none;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+ul.canvas > li {
+    overflow: hidden;
+    overflow-y: auto;
+    display: inline-block;
+    position: relative;
+    padding: 50px 2.5%;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: start !important;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+ul.canvas > li::-webkit-scrollbar {
+    display: none;
+}
+
+ul.canvas > li h1, h2, p {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul.canvas > li {
+   background: #ADCDFF;
+}
+
+ul.canvas > li > div {
+    overflow: overlay;
+}
+
+ul.canvas > li > div::-webkit-scrollbar{
+    width: 10px;
+    background-color: rgba(0,0,0,0);
+}
+
+ul.canvas > li > div::-webkit-scrollbar-thumb {  
+    background: rgba(100, 100, 100,1);
+    border-radius: 10px;
+}
+
+ul.canvas > li:nth-child(1) h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    font-size: 30px;
+    line-height: 50px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+ul.canvas > li:nth-child(1) h2 {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+ul.canvas > li:nth-child(2) h1 {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+ul.canvas > li:nth-child(2) ul {
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+    list-style: none;
+}
+
+ul.canvas > li:nth-child(2) ul li {
+    flex: 1 1 40%;
+    margin: 5px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 0;
+}
+
+ul.canvas > li:nth-child(2) ul li a {
+    display: block;
+    padding: 5px;
+    color: #000;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+ul.canvas > li:nth-child(2) ul li a img {
+    width: 100%;
+    transition: .5s all;
+}
+
+ul.canvas > li:nth-child(2) ul li a:hover img {
+    scale: 1.1;
+}
+
+ul.canvas > li:nth-child(2) ul li a img.asg {
+    animation: asg 5s ease infinite;
+}
+
+@keyframes asg {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+ul.canvas > li:nth-child(2) ul li a img.blitz {
+    animation: blitz 5s ease infinite;
+}
+
+@keyframes blitz {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+ul.canvas > li:nth-child(2) ul li a img.blitz {
+    animation: blitz 5s ease infinite;
+}
+
+ul.canvas > li:nth-child(2) ul li:nth-last-child(1) {
+    flex: 1 1 100%;
+    background: url(../join/arrow-right-s-line.svg) no-repeat right 10px center, #fff;
+}
+
+ul.canvas > li:nth-child(3) div {
+    padding: 10% 2.5%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+ul.canvas > li:nth-child(3) div img {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+ul.canvas > li:nth-child(3) div h1 {
+    margin: 20px 0 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul.canvas > li:nth-child(3) div h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700
+}
+
+ul.canvas > li:nth-child(3) div p {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+
+ul.canvas > li:nth-child(4) div {
+    padding: 10% 2.5%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+}
+
+ul.canvas > li:nth-child(4) div h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+ul.canvas > li:nth-child(4) div img {
+    display: block;
+    margin: 10% auto 0;
+    width: 30%;
+}
+
+ul.canvas > li:nth-child(4) div h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul.canvas > li:nth-child(4) div p {
+    margin: 10px 0 0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+ul.canvas > li:nth-child(4) div p.info {
+    font-size: 10px;
+    color: #ff0000;
+}
+
+ul.canvas > li:nth-child(4) div b {
+    font-size: 10px;
+    font-weight: 700;
+    color: #ff0000;
+}
+
+ul.canvas > li:nth-child(5) div {
+    padding: 10% 5%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+}
+
+ul.canvas > li:nth-child(5) div img {
+    display: block;
+    margin:  0 auto ;
+    width: 50%;
+    animation: asg 5s ease infinite;
+}
+
+@keyframes asg {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+ul.canvas > li:nth-child(5) div h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+ul.canvas > li:nth-child(5) div h2 {
+    margin: 20px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul.canvas > li:nth-child(5) div table {
+    margin: 20px 0 0;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul.canvas > li:nth-child(5) div table caption {
+    display: none;
+}
+
+ul.canvas > li:nth-child(5) div table tbody tr {
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px 1px rgb(223 223 223);
+    border-radius: 50px;
+}
+
+ul.canvas > li:nth-child(5) div table tbody tr td {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+ul.canvas > li:nth-child(5) div p {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+ul.canvas > li:nth-child(6) div {
+    padding: 10% 5%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+}
+
+ul.canvas > li:nth-child(6) div {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+ul.canvas > li:nth-child(6) div img {
+    display: block;
+    margin:  0 auto ;
+    width: 50%;
+    animation: blitz 5s ease infinite;
+}
+
+@keyframes asg {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+ul.canvas > li:nth-child(6) div h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+ul.canvas > li:nth-child(6) div h2 {
+    margin: 20px 0 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+ul.canvas > li:nth-child(6) div table {
+    margin: 20px 0 0;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul.canvas > li:nth-child(6) div table caption {
+    display: none;
+}
+
+ul.canvas > li:nth-child(6) div table tbody tr {
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px 1px rgb(223 223 223);
+    border-radius: 50px;
+}
+
+ul.canvas > li:nth-child(6) div table tbody tr td {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+ul.canvas > li:nth-child(6) div p {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+ul.canvas > li:nth-child(7) > div {
+    overflow: scroll;
+    position: relative;
+    padding: 10% 2.5%;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+ul.canvas > li:nth-child(7) > div::-webkit-scrollbar {
+display: none;
+}
+
+ul.canvas > li:nth-child(7) > div {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+ul.canvas > li:nth-child(7) div h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+ul.canvas > li:nth-child(7) div p {
+    margin: 20px 0 0;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+ul.canvas > li:nth-child(7) div div.link {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 2.5%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+ul.canvas > li:nth-child(7) div div.link a {
+    display: block;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 12px;
+    background: #fee500;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+ul.canvas > li:nth-child(7) div div.link a.home {
+    background:#fff;
+    background-size: 20px;
+    border: 1px solid #000;
+}
