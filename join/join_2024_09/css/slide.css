@@ -77,7 +77,7 @@
 }
 
 .swiper-slide div.particular {
-    margin: 50px;
+    margin: 50px auto;
     opacity: 0;
 }
 
@@ -230,11 +230,7 @@
 
 /* 3페이지 */
 .swiper-slide:nth-child(3) {
-    background: #DAC8F7;
-}
-
-.swiper-slide:nth-child(3) .txt h2,
-.swiper-slide:nth-child(3) .txt p {
+    background: url(../image/page2.jpg) no-repeat 50% 50% / cover;
     color: #fff;
 }
 
@@ -242,10 +238,67 @@
     position: absolute;
     top: 0%;
     transform: translateY(0%);
-    padding: 70px 10px;
+    padding: 70px 0 50px 0;
     width: 100%;
     height: 100vh;
     text-align: center;
+}
+
+.swiper-slide:nth-child(3) h1 {
+    padding: 70vh 0 0 0;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular {
+    text-align: left;
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular:nth-child(2) > div {
+    display: flex;
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular:nth-child(3) {
+    padding: 200px 0 50px;
+    margin: 0;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 80%, rgba(0, 212, 255, 0) 100%);
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular:nth-child(3) > div {
+    padding: 20px;
+    margin: 10px auto;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(10px) brightness(1.5);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular > div img {
+    width: 20%;
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular > div > div {
+    margin: 0 0 0 20px;
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular > div > div h4{
+    display: flex;
+    border-radius: 20px;
+}
+
+.swiper-slide:nth-child(3) .txt2 .particular > div > div p{
+    display: flex;
+    border-radius: 20px;
 }
 
 .swiper-slide-active:nth-child(3) .txt {
